@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity">
+    android:layout_width="match_parent"
+    android:id="@+id/drawer">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,4 +22,39 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_nav"
+        android:id="@+id/frame_layout"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        android:elevation="12dp"
+        android:background="@color/primaryBlue"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:itemIconTint="@color/secondryBlue"
+        app:menu="@menu/bottomnav_menu"
+        android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/main_nav"
+        android:background="@drawable/bg_button"
+        app:itemTextColor="@color/webGray"
+        app:itemIconTint="@color/webGray"
+        android:backgroundTint="@color/primaryBlue"
+        app:menu="@menu/side_drawer_menu"
+        app:headerLayout="@layout/drawer_header_layout"
+        android:layout_gravity="right"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

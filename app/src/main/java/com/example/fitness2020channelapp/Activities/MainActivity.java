@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.home:
                         loadFragment(new HomeFragment());
                         return true;
-                    case R.id.fitness_pass:
+                    case R.id.listing:
                         loadFragment(new ListingFragment());
                         return true;
-                    case R.id.vouchers:
+                    case R.id.feedback:
                         loadFragment(new FeedbackFragment());
                         return true;
-                    case R.id.events:
+                    case R.id.orders:
                         loadFragment(new OrderFragment());
                         return true;
                     case R.id.analytics:
