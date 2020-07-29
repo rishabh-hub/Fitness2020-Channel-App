@@ -9,6 +9,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+import android.view.Gravity;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import com.example.fitness2020channelapp.Fragments.AnalyticsFragment;
 import com.example.fitness2020channelapp.Fragments.FeedbackFragment;
@@ -23,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
     FrameLayout frameLayout;
     DrawerLayout drawerLayout;
     public BottomNavigationView bottomNavigationView;
-    private static  MainActivity instance;
-    String nav = "";
+    ImageView menuBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         attachId();
+
+        menuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(Gravity.RIGHT);
+            }
+        });
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
