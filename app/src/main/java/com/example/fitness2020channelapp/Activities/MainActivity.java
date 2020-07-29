@@ -1,8 +1,10 @@
-package com.example.fitness2020channelapp;
+package com.example.fitness2020channelapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.fitness2020channelapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
