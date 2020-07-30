@@ -88,6 +88,8 @@
                     android:layout_height="wrap_content"
                     android:text="4.5"
                     android:textSize="15sp"
+                    android:background="@drawable/rating_background"
+                    android:paddingHorizontal="10dp"
                     />
 
             </LinearLayout>
