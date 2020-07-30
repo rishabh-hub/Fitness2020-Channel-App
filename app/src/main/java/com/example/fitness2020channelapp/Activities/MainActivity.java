@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         frameLayout=findViewById(R.id.frame_layout);
         bottomNavigationView=findViewById(R.id.bottom_nav);
         drawerLayout=findViewById(R.id.drawer);
+        menuBtn = findViewById(R.id.menu_btn);
     }
 
     public void loadFragment(Fragment fragment)
