@@ -146,10 +146,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="Photos & Videos"
+                        android:text="Photos and Videos"
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/photos_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -158,6 +160,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_photo_vid"
                         android:layout_margin="5dp"
+                        android:id="@+id/photos_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -183,6 +186,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/managers_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -191,6 +196,8 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_managers"
                         android:layout_margin="5dp"
+                        android:id="@+id/managers_iv"
+
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -216,6 +223,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/information_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -224,6 +233,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_information"
                         android:layout_margin="5dp"
+                        android:id="@+id/information_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -258,6 +268,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/offerings_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -266,6 +278,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_offerings"
                         android:layout_margin="5dp"
+                        android:id="@+id/offerings_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -292,6 +305,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/act_fac_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -300,6 +315,8 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_act_fac"
                         android:layout_margin="5dp"
+                        android:id="@+id/act_fac_iv"
+
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -321,10 +338,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="Vouchers & Promo Codes"
+                        android:text="Vouchers and Promo Codes"
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/voucher_pro_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -333,6 +352,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_vouchers"
                         android:layout_margin="5dp"
+                        android:id="@+id/voucher_pro_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -368,6 +388,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/reviews_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -376,6 +398,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_reviews"
                         android:layout_margin="5dp"
+                        android:id="@+id/reviews_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -402,6 +425,8 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:layout_margin="5dp"
+                        android:layout_above="@id/events_iv"
+                        android:layout_alignParentTop="true"
                         />
                     <ImageView
                         android:layout_width="70dp"
@@ -410,6 +435,7 @@
                         android:layout_alignParentRight="true"
                         android:background="@drawable/ic_events"
                         android:layout_margin="5dp"
+                        android:id="@+id/events_iv"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
