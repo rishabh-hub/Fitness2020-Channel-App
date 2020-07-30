@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.openDrawer(Gravity.RIGHT);
+                drawerLayout.openDrawer(Gravity.LEFT);
             }
         });
 

@@ -73,9 +73,8 @@
         android:background="@color/white"
         app:itemTextColor="@color/primaryBlue"
         app:itemIconTint="@color/primaryBlue"
-        android:backgroundTint="@color/primaryBlue"
         app:menu="@menu/side_drawer_menu"
         app:headerLayout="@layout/drawer_header_layout"
-        android:layout_gravity="right"/>
+        android:layout_gravity="left"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
