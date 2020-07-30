@@ -59,7 +59,7 @@
         app:itemTextColor="@color/white"
         app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
         app:itemTextAppearanceInactive="@style/BottomNavigationView"
-        app:itemIconTint="@color/secondryBlue"
+        app:itemIconTint="@drawable/bottom_nav_tint"
         app:menu="@menu/bottomnav_menu"
         android:layout_alignParentBottom="true"/>
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +26,7 @@ public class ListingFragment extends Fragment {
 
     View view;
     CardView photoCard,managerCard,infoCard,offeringsCard,activitiesCard,voucherCard,reviewCard,eventsCard;
+    TextView centerName,centerRating,hasSubscription;
 
     public ListingFragment() {
     }
@@ -36,7 +38,7 @@ public class ListingFragment extends Fragment {
         view=inflater.inflate(R.layout.fragmetn_listing,container,false);
 
         attachID();
-        cardClickListener();
+//        cardClickListener();
 
 
         return view;
@@ -51,6 +53,9 @@ public class ListingFragment extends Fragment {
 //        voucherCard = view.findViewById(R.id.);
 //        eventsCard = view.findViewById(R.id.);
 //        reviewCard = view.findViewById(R.id.);
+//        centerName = view.findViewById(R.id.);
+//        centerRating = view.findViewById(R.id.);
+//        hasSubscription = view.findViewById(R.id.);
     }
 
     private void cardClickListener() {
