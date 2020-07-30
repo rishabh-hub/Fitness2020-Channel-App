@@ -45,17 +45,17 @@ public class ListingFragment extends Fragment {
     }
 
     private void attachID() {
-//        photoCard = view.findViewById(R.id.);
-//        managerCard = view.findViewById(R.id.);
-//        infoCard = view.findViewById(R.id.);
-//        activitiesCard = view.findViewById(R.id.);
-//        offeringsCard = view.findViewById(R.id.);
-//        voucherCard = view.findViewById(R.id.);
-//        eventsCard = view.findViewById(R.id.);
-//        reviewCard = view.findViewById(R.id.);
-//        centerName = view.findViewById(R.id.);
-//        centerRating = view.findViewById(R.id.);
-//        hasSubscription = view.findViewById(R.id.);
+        photoCard = view.findViewById(R.id.cardvw_pho_vid);
+        managerCard = view.findViewById(R.id.cardvw_managers);
+        infoCard = view.findViewById(R.id.cardvw_information);
+        activitiesCard = view.findViewById(R.id.cardvw_act_fac);
+        offeringsCard = view.findViewById(R.id.cardvw_offerings);
+        voucherCard = view.findViewById(R.id.cardvw_vou_pro);
+        eventsCard = view.findViewById(R.id.cardvw_events);
+        reviewCard = view.findViewById(R.id.cardvw_reviews);
+        centerName = view.findViewById(R.id.listing_name);
+        centerRating = view.findViewById(R.id.rating);
+        hasSubscription = view.findViewById(R.id.listing_subscription);
     }
 
     private void cardClickListener() {
