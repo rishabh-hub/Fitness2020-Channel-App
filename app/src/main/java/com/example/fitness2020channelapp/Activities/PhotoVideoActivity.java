@@ -22,7 +22,6 @@ public class PhotoVideoActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ImageView backBtn;
-    TextView centerName;
     PhotoPageAdapter slideAdapter;
     ViewPager viewPager;
     Fragment fragment;
@@ -90,7 +89,7 @@ public class PhotoVideoActivity extends AppCompatActivity {
     public void loadFragment(Fragment fragment)
     {
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout,fragment);
+        fragmentTransaction.replace(R.id.photo_video_activity_frameLayout,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

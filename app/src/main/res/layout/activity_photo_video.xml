@@ -21,7 +21,7 @@
             <RelativeLayout
                 android:id="@+id/tlbr_rellay"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:background="@color/primaryBlue">
 
                 <ImageView
@@ -48,7 +48,7 @@
 
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
-                android:layout_height="50sp"
+                android:layout_height="46sp"
                 app:tabTextColor="@color/secondryBlue"
                 android:background="@color/primaryBlue"
                 android:id="@+id/tab_layout"

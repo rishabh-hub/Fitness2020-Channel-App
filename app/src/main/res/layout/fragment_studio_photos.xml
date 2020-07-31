@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".Fragments.StudioPhotosFragment">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
@@ -38,6 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/studio_photos_rv"
+        android:paddingLeft="3dp"
+        android:nestedScrollingEnabled="false"
         android:layout_below="@+id/photos_heading_rel_lay"
         />
 
@@ -72,7 +77,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/studio_videos_rv"
+        android:paddingLeft="3dp"
+        android:nestedScrollingEnabled="false"
         android:layout_below="@+id/videos_heading_rel_lay"
         />
-
 </RelativeLayout>
+
+</ScrollView>

@@ -2,11 +2,14 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
     android:layout_height="109dp">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/video_model_rv_imgvw"
+        android:background="@color/darkBlue"
         />
 
     <ImageView
@@ -14,6 +17,7 @@
         android:layout_height="30dp"
         android:id="@+id/video_model_rv_imgvw_play"
         android:src="@drawable/ic_play"
+        android:layout_margin="7dp"
         android:layout_alignParentRight="true"
         android:elevation="2dp"
         />

@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:scaleType="centerCrop"
     android:id="@+id/photo_model_rv_imgvw"
-    android:layout_height="109dp">
+    android:layout_height="109dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@color/darkBlue">
 
 </ImageView>

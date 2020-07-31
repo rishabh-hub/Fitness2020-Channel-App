@@ -24,11 +24,11 @@ public class PhotoVideoFragmentAdapter extends RecyclerView.Adapter<PhotoVideoFr
     int pageCode;
     int type;
 
-    public PhotoVideoFragmentAdapter(ArrayList<PhotoModel> photos, ArrayList<VideoModel> videos, Context context, int code, int type) {
+    public PhotoVideoFragmentAdapter(ArrayList<PhotoModel> photos, ArrayList<VideoModel> videos, Context context, int pageCode, int type) {
         this.photos = photos;
         this.videos = videos;
         this.context = context;
-        this.pageCode = code;
+        this.pageCode = pageCode;
         this.type = type;
     }
 
