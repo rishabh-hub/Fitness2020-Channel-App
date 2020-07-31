@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:fillViewport="true">
     xmlns:android="http://schemas.android.com/apk/res/android" >
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -42,39 +43,43 @@
                 android:textColor="#000"
                 android:id="@+id/listing_name"
                 android:layout_marginVertical="1dp"
+                android:fontFamily="@font/hind_bold"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mumbai"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:id="@+id/listing_city"
                 android:textColor="@color/darkgrey"
                 android:layout_below="@id/listing_name"
                 android:layout_marginVertical="1dp"
+                android:fontFamily="@font/ubuntu_regular"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Subscription:"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/darkgrey"
                 android:id="@+id/listing_subscription"
                 android:layout_below="@id/listing_city"
                 android:layout_marginVertical="1dp"
+                android:fontFamily="@font/ubuntu_regular"
+
                 />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:textColor="@color/primaryBlue"
                     android:id="@+id/listing_subscription_detail"
                     android:layout_below="@id/listing_city"
                     android:layout_toRightOf="@id/listing_subscription"
                     android:layout_marginStart="5dp"
                     android:layout_marginVertical="1dp"
-
+                    android:fontFamily="@font/ubuntu_medium"
                     />
             </RelativeLayout>
 
@@ -92,11 +97,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.5"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:background="@drawable/rating_background"
                     android:paddingHorizontal="10dp"
                     android:textColor="@color/darkBlue"
                     android:id="@+id/rating"
+                    android:fontFamily="@font/ubuntu_bold"
                     />
 
             </LinearLayout>
@@ -127,6 +133,7 @@
             android:gravity="center"
             android:textSize="17sp"
             android:textColor="#000"
+            android:fontFamily="@font/hind_bold"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -158,6 +165,7 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/photos_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -196,6 +204,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/managers_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -235,6 +245,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/information_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -281,6 +293,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/offerings_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -320,6 +334,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/act_fac_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -359,6 +375,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/voucher_pro_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -406,6 +424,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/reviews_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
@@ -445,6 +465,8 @@
                         android:layout_margin="5dp"
                         android:layout_above="@id/events_iv"
                         android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+
                         />
                     <ImageView
                         android:layout_width="40dp"
