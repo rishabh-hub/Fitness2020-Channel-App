@@ -60,12 +60,13 @@ public class PhotoVideoFragmentAdapter extends RecyclerView.Adapter<PhotoVideoFr
         ImageView photoView,videoView;
         public PhotoVideoVH(@NonNull View itemView) {
             super(itemView);
-//            photoView = itemView.findViewById(R.id.);
+            photoView = itemView.findViewById(R.id.photo_model_rv_imgvw);
 //            videoView = itemView.findViewById(R.id.);
         }
 
         public void populatePhoto(PhotoModel photoModel) {
-            Glide.with(context).load(photoModel.getImageUri()).into(photoView);
+//            Glide.with(context).load(photoModel.getImageUri()).into(photoView);
+            photoView.setImageResource(photoModel.getImageUri());
         }
 
         public void populateVideo(VideoModel videoModel) {

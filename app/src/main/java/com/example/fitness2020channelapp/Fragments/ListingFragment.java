@@ -38,7 +38,7 @@ public class ListingFragment extends Fragment {
         view=inflater.inflate(R.layout.fragmetn_listing,container,false);
 
         attachID();
-//        cardClickListener();
+        cardClickListener();
 
 
         return view;

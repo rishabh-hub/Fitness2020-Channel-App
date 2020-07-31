@@ -54,8 +54,8 @@ public class StudioPhotosFragment extends Fragment {
     private void addDummyData() {
         for (int i=0;i<7;i++)
         {
-//            photos.add();
-//            videos.add();
+            photos.add(new PhotoModel(R.drawable.ic_home));
+            videos.add(new VideoModel("hello"));
         }
     }
 
@@ -75,8 +75,8 @@ public class StudioPhotosFragment extends Fragment {
     }
 
     private void attachID() {
-//        photoGridRV = view.findViewById();
-//        videoGridRV = view.findViewById();
+        photoGridRV = view.findViewById(R.id.studio_photos_rv);
+        videoGridRV = view.findViewById(R.id.studio_videos_rv);
 //        addPhotoBtn = view.findViewById();
 //        addVideoBtn = view.findViewById();
     }

@@ -81,8 +81,9 @@ public class PhotoVideoActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        tabLayout = findViewById(R.id.);
-//        backBtn = findViewById(R.id.);
+        tabLayout = findViewById(R.id.tab_layout);
+        backBtn = findViewById(R.id.back_btn);
+        viewPager = findViewById(R.id.photo_video_activity_viewpager);
 //        centerName = findViewById(R.id.);
     }
 
