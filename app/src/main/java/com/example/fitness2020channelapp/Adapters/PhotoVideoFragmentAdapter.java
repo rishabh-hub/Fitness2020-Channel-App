@@ -53,7 +53,15 @@ public class PhotoVideoFragmentAdapter extends RecyclerView.Adapter<PhotoVideoFr
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        if(type==0)
+        {
+            return photos.size();
+        }
+
+        else
+            return videos.size();
+
     }
 
     public class PhotoVideoVH extends RecyclerView.ViewHolder {

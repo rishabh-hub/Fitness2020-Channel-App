@@ -49,7 +49,7 @@
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
-                app:tabTextColor="@color/darkgrey"
+                app:tabTextColor="@color/secondryBlue"
                 android:background="@color/primaryBlue"
                 android:id="@+id/tab_layout"
                 android:paddingBottom="2dp"
