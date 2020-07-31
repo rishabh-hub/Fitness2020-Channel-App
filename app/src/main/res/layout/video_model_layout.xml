@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="109dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video_model_rv_imgvw"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:id="@+id/video_model_rv_imgvw_play"
+        android:src="@drawable/ic_play"
+        android:layout_alignParentRight="true"
+        android:elevation="2dp"
+        />
+
+
+</RelativeLayout>
