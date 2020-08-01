@@ -27,7 +27,7 @@ public class ManagerAdapter extends RecyclerView.Adapter<ManagerAdapter.ManagerV
     @NonNull
     @Override
     public ManagerAdapter.ManagerVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        return new ManagerVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+        return new ManagerVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.manager_rv_item,parent,false));
     }
 
     @Override
@@ -45,9 +45,9 @@ public class ManagerAdapter extends RecyclerView.Adapter<ManagerAdapter.ManagerV
         TextView name,email,mobileNo;
         public ManagerVH(@NonNull View itemView) {
             super(itemView);
-//            name =  itemView.findViewById();
-//            email = itemView.findViewById();
-//            mobileNo = itemView.findViewById();
+            name =  itemView.findViewById(R.id.manager_rv_item_name);
+            email = itemView.findViewById(R.id.manager_rv_item_email);
+            mobileNo = itemView.findViewById(R.id.manager_rv_item_phno);
         }
 
         public void populateManagers(ManagerModel managerModel) {
