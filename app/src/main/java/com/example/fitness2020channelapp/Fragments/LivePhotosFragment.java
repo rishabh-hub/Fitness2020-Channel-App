@@ -56,6 +56,9 @@ public class LivePhotosFragment extends Fragment {
     private void setAdapters() {
         photoGridRV.setAdapter(photoAdapter);
         videoGridRV.setAdapter(videoAdapter);
+
+        photoAdapter.notifyDataSetChanged();
+        videoAdapter.notifyDataSetChanged();
     }
 
     private void initAdapter() {

@@ -1,0 +1,60 @@
+package com.example.fitness2020channelapp.Adapters;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.fitness2020channelapp.Models.ManagerModel;
+import com.example.fitness2020channelapp.R;
+
+import java.util.ArrayList;
+
+public class ManagerAdapter extends RecyclerView.Adapter<ManagerAdapter.ManagerVH> {
+
+    ArrayList<ManagerModel> managers;
+    Context context;;
+
+    public ManagerAdapter(ArrayList<ManagerModel> managers, Context context) {
+        this.managers = managers;
+        this.context = context;
+    }
+
+    @NonNull
+    @Override
+    public ManagerAdapter.ManagerVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//        return new ManagerVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ManagerAdapter.ManagerVH holder, int position) {
+        holder.populateManagers(managers.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return managers.size();
+    }
+
+    public class
+    ManagerVH extends RecyclerView.ViewHolder {
+        TextView name,email,mobileNo;
+        public ManagerVH(@NonNull View itemView) {
+            super(itemView);
+//            name =  itemView.findViewById();
+//            email = itemView.findViewById();
+//            mobileNo = itemView.findViewById();
+        }
+
+        public void populateManagers(ManagerModel managerModel) {
+            name.setText(managerModel.getName());
+            email.setText(managerModel.getEmail());
+            mobileNo.setText(managerModel.getMobileNo());
+
+        }
+    }
+}
