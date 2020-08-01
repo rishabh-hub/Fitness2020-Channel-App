@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.ManagerActivity">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,16 +41,23 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_below="@id/tlbr_rellay"
+            >
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/managers_rv"
-            android:layout_below="@id/tlbr_rellay"
-            android:layout_marginTop="26dp"
+            android:nestedScrollingEnabled="false"
+            android:paddingTop="20dp"
             />
 
-
+        </ScrollView>
 
     </RelativeLayout>
 
-</ScrollView>
+</RelativeLayout>
