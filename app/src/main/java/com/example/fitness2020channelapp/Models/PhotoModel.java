@@ -1,17 +1,19 @@
 package com.example.fitness2020channelapp.Models;
 
-public class PhotoModel {
-    private int imageUri;
+import android.net.Uri;
 
-    public PhotoModel(int imageUri) {
+public class PhotoModel {
+    private Uri imageUri;
+
+    public PhotoModel(Uri imageUri) {
         this.imageUri = imageUri;
     }
 
-    public int getImageUri() {
+    public Uri getImageUri() {
         return imageUri;
     }
 
-    public void setImageUri(int imageUri) {
+    public void setImageUri(Uri imageUri) {
         this.imageUri = imageUri;
     }
 }

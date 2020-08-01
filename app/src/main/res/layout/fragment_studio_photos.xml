@@ -36,6 +36,7 @@
             android:layout_alignParentEnd="true"
             android:src="@drawable/ic_add"
             android:layout_marginEnd="14dp"
+            android:id="@+id/studio_photo_add_btn"
             />
     </RelativeLayout>
 

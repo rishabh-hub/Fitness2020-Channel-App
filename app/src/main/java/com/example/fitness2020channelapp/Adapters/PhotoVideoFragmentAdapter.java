@@ -1,6 +1,7 @@
 package com.example.fitness2020channelapp.Adapters;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +65,11 @@ public class PhotoVideoFragmentAdapter extends RecyclerView.Adapter<PhotoVideoFr
 
     }
 
+    public void addPhoto(Uri uri) {
+        photos.add(new PhotoModel(uri));
+        notifyDataSetChanged();
+    }
+
     public class PhotoVideoVH extends RecyclerView.ViewHolder {
         ImageView photoView,videoView;
         public PhotoVideoVH(@NonNull View itemView) {
@@ -74,7 +80,7 @@ public class PhotoVideoFragmentAdapter extends RecyclerView.Adapter<PhotoVideoFr
 
         public void populatePhoto(PhotoModel photoModel) {
 //            Glide.with(context).load(photoModel.getImageUri()).into(photoView);
-            photoView.setImageResource(photoModel.getImageUri());
+            photoView.setImageURI(photoModel.getImageUri());
         }
 
         public void populateVideo(VideoModel videoModel) {
