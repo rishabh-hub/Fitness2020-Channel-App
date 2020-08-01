@@ -64,7 +64,8 @@ public class ManagerActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        managerRV = findViewById();
-//        backBtn = findViewById();
+        managerRV = findViewById(R.id.managers_rv);
+        backBtn = findViewById(R.id.back_btn);
     }
+
 }
