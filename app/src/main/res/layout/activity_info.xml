@@ -1,9 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".Activities.InfoActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/tlbr_rellay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/primaryBlue">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_back_arrow"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/header_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Information"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/back_btn"
+                android:layout_marginStart="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/info_save_tv"
+                />
+
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlbr_rellay"
+            android:layout_marginTop="19dp"
+            android:id="@+id/info_name_container"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:id="@+id/info_name_tv"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:textColor="@color/darkgrey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Name :"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@id/info_name_tv"
+            android:id="@+id/info_name"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/darkgrey"
+            android:text="Capoeira India"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/info_name_edit_imgvw"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_edit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:id="@+id/info_name_edit_imgvw"
+            android:layout_centerVertical="true"
+            />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_name_container"
+        android:layout_marginTop="16dp"
+        android:id="@+id/info_address_container"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:id="@+id/info_address_tv"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:textColor="@color/darkgrey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Address :"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_cut"
+            android:rotation="45"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_address_container"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="17dp"
+            android:id="@+id/info_address_rv"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_address_rv"
+        android:layout_marginTop="19dp"
+        android:id="@+id/info_description_container"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:id="@+id/info_description_tv"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:textColor="@color/darkgrey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Description :"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_edit"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_below="@id/info_description_container"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:id="@+id/info_description_text_tv"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_description_text_tv"
+        android:layout_marginTop="19dp"
+        android:id="@+id/info_remember_container"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:id="@+id/info_remember_tv"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:textColor="@color/darkgrey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Things To Remember :"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_edit"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_below="@id/info_remember_container"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:id="@+id/info_remember_text_tv"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
