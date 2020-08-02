@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fitness2020channelapp.Adapters.AddressAdapter;
 import com.example.fitness2020channelapp.Adapters.ManagerAdapter;
@@ -56,8 +60,25 @@ public class InfoActivity extends AppCompatActivity {
         editNameBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(InfoActivity.this)
+                View dialogLayout = getLayoutInflater().inflate(R.layout.input_dialog_layout,null);
+                final EditText nameET = dialogLayout.findViewById(R.id.dialog_edit_text);
+                AlertDialog dialogBuilder = new MaterialAlertDialogBuilder(InfoActivity.this)
                         .setTitle("Edit Name")
+                        .setView(R.layout.input_dialog_layout)
+                        .setPositiveButton("confirm", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(InfoActivity.this,nameET.getText().toString(),Toast.LENGTH_SHORT).show();
+
+                            }
+                        })
+                        .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        })
+                        .show();
 
             }
         });
