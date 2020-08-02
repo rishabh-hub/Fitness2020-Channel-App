@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tlbr_rellay"
-            android:paddingBottom="10dp"
+            android:paddingBottom="30dp"
             >
 
             <RelativeLayout
@@ -133,8 +133,8 @@
             />
 
         <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="26dp"
             android:src="@drawable/ic_cut"
