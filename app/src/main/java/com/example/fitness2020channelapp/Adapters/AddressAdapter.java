@@ -48,8 +48,8 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.AddressV
 
         public AddressVH(@NonNull View itemView) {
             super(itemView);
-//            addressTV = itemView.findViewById(R.id.);
-//            cutBtn = itemView.findViewById(R.id.);
+            addressTV = itemView.findViewById(R.id.address_rv_tv);
+            cutBtn = itemView.findViewById(R.id.address_rv_cut);
 
             cutBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
