@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.OfferingsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/tlbr_rellay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/primaryBlue">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/header_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Offerings"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/back_btn"
+                    android:layout_marginStart="40dp"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="46sp"
+                app:tabTextColor="@color/secondryBlue"
+                android:background="@color/primaryBlue"
+                android:id="@+id/tab_layout"
+                android:paddingBottom="2dp"
+                android:layout_below="@+id/tlbr_rellay"
+                app:tabIndicatorColor="@color/white"
+                app:tabSelectedTextColor="@color/white"
+                android:layout_marginBottom="5dp"
+                >
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/at_the_studio_tab"
+                    android:text="AT THE STUDIO"
+                    />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_workouts_tab"
+                    android:text="LIVE WORKOUTS"
+                    />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/events_tab"
+                    android:text="EVENTS"
+                    />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/offerings_activity_viewpager"
+                android:layout_below="@id/tab_layout"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/offerings_activity_frameLayout"
+                    />
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
