@@ -33,7 +33,7 @@
         android:fontFamily="@font/ubuntu_bold"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:id="@+id/offering_live_delete_btn"
+        android:id="@+id/offering_studio_delete_btn"
         />
 
 </RelativeLayout>
