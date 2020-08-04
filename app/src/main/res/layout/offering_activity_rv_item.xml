@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginBottom="8dp"
     android:background="@drawable/manager_card_bg"
     >
     
@@ -33,6 +35,7 @@
             android:layout_marginStart="24dp"
             android:id="@+id/offering_image"
             android:layout_toLeftOf="@id/offering_price"
+            android:src="@drawable/ic_schedule"
             />
 
         <TextView
