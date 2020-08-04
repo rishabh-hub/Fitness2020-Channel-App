@@ -39,6 +39,13 @@ public class LiveOfferingFragment extends Fragment {
         initAdapter();
         setAdapters();
 
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //do deletion via api
+            }
+        });
+
         return view;
     }
 
@@ -48,10 +55,10 @@ public class LiveOfferingFragment extends Fragment {
     }
 
     private void addDummyData() {
-        offeringModels.add(new OfferingModel("Daily Subscription","Rs 999","abc",true));
+        offeringModels.add(new OfferingModel("Daily Subscription","₹ 999","abc",true));
         for (int i=0;i<2;i++)
         {
-            offeringModels.add(new OfferingModel("Daily Subscription","Rs 999","abc",false));
+            offeringModels.add(new OfferingModel("Daily Subscription","₹ 999","abc",false));
         }
     }
 
@@ -70,7 +77,7 @@ public class LiveOfferingFragment extends Fragment {
     }
 
     private void attachID() {
-//        offeringsRV = view.findViewById(R.id.);
-//        deleteBtn = view.findViewById(R.id.);
+        offeringsRV = view.findViewById(R.id.offering_live_rv);
+        deleteBtn = view.findViewById(R.id.offering_live_delete_btn);
     }
 }
