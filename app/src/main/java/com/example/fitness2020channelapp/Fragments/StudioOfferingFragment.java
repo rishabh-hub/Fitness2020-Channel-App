@@ -64,7 +64,7 @@ public class StudioOfferingFragment extends Fragment {
     }
 
     private void initSpinner() {
-        ArrayAdapter subjectAdapter = new ArrayAdapter(getContext(),android.R.layout.simple_spinner_dropdown_item,activities);
+        ArrayAdapter subjectAdapter = new ArrayAdapter(view.getContext(),android.R.layout.simple_spinner_dropdown_item,activities);
         subjectAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         studioOfferingSpinner.setAdapter(subjectAdapter);
         studioOfferingSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

@@ -12,6 +12,10 @@
     <Spinner style="@style/SpinnerTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:dropDownVerticalOffset="50dp"
+        android:popupBackground="@drawable/manager_card_bg"
+        android:popupElevation="0dp"
         android:id="@+id/offering_studio_spinner"
         android:layout_marginTop="23dp"
         />
