@@ -55,8 +55,8 @@ public class OfferingsAdapter extends RecyclerView.Adapter<OfferingsAdapter.Offe
         public OfferingVH(@NonNull View itemView) {
             super(itemView);
             offeringName = itemView.findViewById(R.id.offering_name);
-            offeringPrice = itemView.findViewById(R.id.offering_image);
-            dailyScheduleBtn = itemView.findViewById(R.id.offering_price);
+            offeringPrice = itemView.findViewById(R.id.offering_price);
+            dailyScheduleBtn = itemView.findViewById(R.id.offering_image);
         }
 
         public void populateOfferings(OfferingModel offeringModel) {

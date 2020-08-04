@@ -10,9 +10,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.fitness2020channelapp.Adapters.OfferingPageAdapter;
 import com.example.fitness2020channelapp.Adapters.PhotoPageAdapter;
+import com.example.fitness2020channelapp.Fragments.EventOfferingFragment;
 import com.example.fitness2020channelapp.Fragments.EventsPhotosFragment;
+import com.example.fitness2020channelapp.Fragments.LiveOfferingFragment;
 import com.example.fitness2020channelapp.Fragments.LivePhotosFragment;
+import com.example.fitness2020channelapp.Fragments.StudioOfferingFragment;
 import com.example.fitness2020channelapp.Fragments.StudioPhotosFragment;
 import com.example.fitness2020channelapp.R;
 import com.google.android.material.tabs.TabLayout;
@@ -21,7 +25,7 @@ public class OfferingsActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ImageView backBtn;
-    PhotoPageAdapter slideAdapter;
+    OfferingPageAdapter slideAdapter;
     ViewPager viewPager;
     Fragment fragment;
 
@@ -31,6 +35,8 @@ public class OfferingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_offerings);
         attachID();
 
+        loadFragment(new StudioOfferingFragment());
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +44,7 @@ public class OfferingsActivity extends AppCompatActivity {
             }
         });
 
-        slideAdapter=new PhotoPageAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,tabLayout.getTabCount());
+        slideAdapter=new OfferingPageAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,tabLayout.getTabCount());
         viewPager.setAdapter(slideAdapter);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -48,13 +54,13 @@ public class OfferingsActivity extends AppCompatActivity {
 
                 switch(tab.getPosition())
                 {
-                    case 0: fragment=new StudioPhotosFragment();
+                    case 0: fragment=new StudioOfferingFragment();
                         loadFragment(fragment);
                         break;
-                    case 1: fragment=new LivePhotosFragment();
+                    case 1: fragment=new LiveOfferingFragment();
                         loadFragment(fragment);
                         break;
-                    case 2: fragment=new EventsPhotosFragment();
+                    case 2: fragment=new EventOfferingFragment();
                         loadFragment(fragment);
                         break;
                 }
