@@ -33,7 +33,7 @@ public class OfferingsAdapter extends RecyclerView.Adapter<OfferingsAdapter.Offe
     @NonNull
     @Override
     public OfferingsAdapter.OfferingVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        return new OfferingVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.offering_rv_item,parent,false));
+        return new OfferingVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.offering_activity_rv_item,parent,false));
     }
 
     @Override
@@ -54,9 +54,9 @@ public class OfferingsAdapter extends RecyclerView.Adapter<OfferingsAdapter.Offe
 
         public OfferingVH(@NonNull View itemView) {
             super(itemView);
-//            offeringName = itemView.findViewById();
-//            offeringPrice = itemView.findViewById();
-//            dailyScheduleBtn = itemView.findViewById();
+            offeringName = itemView.findViewById(R.id.offering_name);
+            offeringPrice = itemView.findViewById(R.id.offering_image);
+            dailyScheduleBtn = itemView.findViewById(R.id.offering_price);
         }
 
         public void populateOfferings(OfferingModel offeringModel) {

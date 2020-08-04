@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/manager_card_bg"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="15dp"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Subscription"
+            android:textColor="@color/primaryBlue"
+            android:textSize="17sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:id="@+id/offering_name"
+            android:layout_toLeftOf="@id/offering_image"
+            android:layout_alignParentStart="true"
+            />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:id="@+id/offering_image"
+            android:layout_toLeftOf="@id/offering_price"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹99"
+            android:textColor="@color/fontGrey"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:layout_marginStart="16dp"
+            android:id="@+id/offering_price"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    
+</LinearLayout>
