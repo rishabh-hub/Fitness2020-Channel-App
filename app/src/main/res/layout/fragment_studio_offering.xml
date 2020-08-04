@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/offering_studio_spinner"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="13dp"
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/offering_studio_rv"
         android:layout_below="@id/offering_studio_spinner"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="10dp"
         />
 
     <Button
