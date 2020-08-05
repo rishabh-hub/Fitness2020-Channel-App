@@ -33,7 +33,7 @@ public class OfferingScheduleAdapter extends RecyclerView.Adapter<OfferingSchedu
 
     @Override
     public void onBindViewHolder(@NonNull OfferingScheduleAdapter.ScheduleVH holder, int position) {
-        holder.populateDay(slots.get(position));
+        holder.populateDay(slots.get(position),position);
     }
 
     @Override
@@ -53,7 +53,8 @@ public class OfferingScheduleAdapter extends RecyclerView.Adapter<OfferingSchedu
 //            editBtn = itemView.findViewById();
         }
 
-        public void populateDay(OfferingSlotModel offeringSlotModel) {
+        public void populateDay(OfferingSlotModel offeringSlotModel,int position) {
+            slotNum.setText("slot "+Integer.toString(position+1));
             endTime.setText(offeringSlotModel.getEndTime());
             startTime.setText(offeringSlotModel.getStartTime());
 
