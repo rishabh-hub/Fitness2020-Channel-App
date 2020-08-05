@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,11 +42,27 @@ public class OfferingScheduleAdapter extends RecyclerView.Adapter<OfferingSchedu
     }
 
     public class ScheduleVH extends RecyclerView.ViewHolder {
+        TextView slotNum,endTime,startTime;
+        ImageView editBtn;
         public ScheduleVH(@NonNull View itemView) {
             super(itemView);
+
+//            slotNum = itemView.findViewById();
+//            endTime = itemView.findViewById();
+//            startTime = itemView.findViewById();
+//            editBtn = itemView.findViewById();
         }
 
         public void populateDay(OfferingSlotModel offeringSlotModel) {
+            endTime.setText(offeringSlotModel.getEndTime());
+            startTime.setText(offeringSlotModel.getStartTime());
+
+            editBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //open edit dialog
+                }
+            });
         }
     }
 }
