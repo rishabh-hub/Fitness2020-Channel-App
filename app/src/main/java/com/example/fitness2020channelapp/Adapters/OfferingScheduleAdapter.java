@@ -47,10 +47,10 @@ public class OfferingScheduleAdapter extends RecyclerView.Adapter<OfferingSchedu
         public ScheduleVH(@NonNull View itemView) {
             super(itemView);
 
-//            slotNum = itemView.findViewById();
-//            endTime = itemView.findViewById();
-//            startTime = itemView.findViewById();
-//            editBtn = itemView.findViewById();
+            slotNum = itemView.findViewById(R.id.slot_rv_item_no);
+            endTime = itemView.findViewById(R.id.slot_rv_item_end);
+            startTime = itemView.findViewById(R.id.slot_rv_item_start);
+            editBtn = itemView.findViewById(R.id.slot_rv_item_edit);
         }
 
         public void populateDay(OfferingSlotModel offeringSlotModel,int position) {

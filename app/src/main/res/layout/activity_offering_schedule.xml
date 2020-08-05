@@ -1,9 +1,499 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Activities.OfferingScheduleActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/tlbr_rellay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBlue">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Schedule For"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_marginStart="40dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/schedule_save_tv"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@id/tlbr_rellay"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monday_tv"
+                    android:text="Monday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/monday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesday_tv"
+                    android:text="Tuesday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/tuesday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuesday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesday_tv"
+                    android:text="Wednesday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/wednesday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wednesday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thursday_tv"
+                    android:text="Thursday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thursday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/thursday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thursday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/thursday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friday_tv"
+                    android:text="Friday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/friday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/friday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturday_tv"
+                    android:text="Saturday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/saturday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saturday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/day_bg"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:layout_marginHorizontal="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sunday_tv"
+                    android:text="Sunday"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sunday_clear_tv"
+                    android:text="Clear"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="22dp"
+                    android:textColor="@color/white"
+                    android:layout_toLeftOf="@id/sunday_add_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sunday_add_tv"
+                    android:text="Add"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunday_rv"
+                android:layout_marginHorizontal="7dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

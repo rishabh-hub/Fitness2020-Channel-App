@@ -219,7 +219,7 @@ public class OfferingScheduleActivity extends AppCompatActivity {
     }
 
     private void addDummyData() {
-        for (int i=0;i<3;i++){
+        for (int i=0;i<=3;i++){
             mondaySlots.add(new OfferingSlotModel("Monday","7:00 AM","8:30 AM"));
             tuesdaySlots.add(new OfferingSlotModel("Tuesday","7:00 AM","8:30 AM"));
             wednesdaySlots.add(new OfferingSlotModel("Wednesday","7:00 AM","8:30 AM"));
@@ -242,5 +242,30 @@ public class OfferingScheduleActivity extends AppCompatActivity {
     }
 
     private void attachID() {
+        mondaySlotsRV=findViewById(R.id.monday_rv);
+        tuesdaySlotsRV=findViewById(R.id.tuesday_rv);
+        wednesdaySlotsRV=findViewById(R.id.wednesday_rv);
+        thursdaySlotsRV=findViewById(R.id.thursday_rv);
+        fridaySlotsRV=findViewById(R.id.friday_rv);
+        saturdaySlotsRV=findViewById(R.id.saturday_rv);
+        sundaySlotsRV=findViewById(R.id.sunday_rv);
+
+        saveBtn=findViewById(R.id.schedule_save_tv);
+        mondayAdd=findViewById(R.id.monday_add_tv);
+        mondayClear=findViewById(R.id.monday_clear_tv);
+        tuesdayAdd=findViewById(R.id.tuesday_add_tv);
+        tuesdayClear=findViewById(R.id.tuesday_clear_tv);
+        wednesdayAdd=findViewById(R.id.wednesday_add_tv);
+        wednesdayClear=findViewById(R.id.wednesday_clear_tv);
+        thursdayAdd=findViewById(R.id.thursday_add_tv);
+        thursdayClear=findViewById(R.id.thursday_clear_tv);
+        fridayAdd=findViewById(R.id.friday_add_tv);
+        fridayClear=findViewById(R.id.friday_clear_tv);
+        saturdayClear=findViewById(R.id.saturday_clear_tv);
+        saturdayAdd=findViewById(R.id.saturday_add_tv);
+        sundayAdd=findViewById(R.id.sunday_add_tv);
+        sundayClear=findViewById(R.id.sunday_clear_tv);
+
+        backBtn=findViewById(R.id.back_btn);
     }
 }
