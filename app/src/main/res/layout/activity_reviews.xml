@@ -34,28 +34,24 @@
             android:layout_marginStart="40dp"
             android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:layout_marginEnd="16dp"
-            android:id="@+id/info_save_tv"
-            />
-
     </RelativeLayout>
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chip_group_container"
+        android:layout_below="@id/tlbr_rellay"
+        android:scrollbars="none"
+        >
     <com.google.android.material.chip.ChipGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/location_chipgrp"
-        android:layout_below="@id/tlbr_rellay"
         app:singleLine="true"
+        android:nestedScrollingEnabled="true"
         style="@style/Widget.MaterialComponents.Chip.Choice"
-        android:padding="5dp">
+        android:paddingHorizontal="5dp"
+        >
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
@@ -63,12 +59,14 @@
             android:text="Prabhadevi"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="12sp"
+            android:clickable="true"
             android:textColor="@color/fontGrey"
             />
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Prabhadevi"
+            android:scrollHorizontally="true"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="12sp"
             android:textColor="@color/fontGrey"
@@ -100,12 +98,14 @@
 
     </com.google.android.material.chip.ChipGroup>
 
+    </HorizontalScrollView>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/location_chipgrp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chip_group_container"
         android:id="@+id/reviews_activity_rv"
+        android:layout_marginHorizontal="10dp"
         />
 
 </RelativeLayout>
