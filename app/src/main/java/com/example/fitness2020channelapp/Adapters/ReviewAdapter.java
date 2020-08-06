@@ -52,11 +52,11 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.reviewVH> 
         TextView centerReview,personName,reviewDate,centerRating,readMorebtn;
         public reviewVH(@NonNull View itemView) {
             super(itemView);
-//            centerRating = itemView.findViewById();
-//            centerReview = itemView.findViewById();
-//            personName = itemView.findViewById();
-//            reviewDate = itemView.findViewById();
-//            readMorebtn = itemView.findViewById();
+            centerRating = itemView.findViewById(R.id.review_item_rating_tv);
+            centerReview = itemView.findViewById(R.id.review_item_review_tv);
+            personName = itemView.findViewById(R.id.review_item_name_tv);
+            reviewDate = itemView.findViewById(R.id.review_item_time_tv);
+            readMorebtn = itemView.findViewById(R.id.review_item_read_more_btn);
         }
 
         public void populateReview(ReviewModel reviewModel) {

@@ -77,8 +77,8 @@ public class ReviewsActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        reviewRV = findViewById(R.id.);
-//        backBtn = findViewById(R.id.back_btn);
-//        filterChips = findViewById(R.id.);
+        reviewRV = findViewById(R.id.reviews_activity_rv);
+        backBtn = findViewById(R.id.back_btn);
+        filterChips = findViewById(R.id.location_chipgrp);
     }
 }

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="14dp"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/manager_card_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/review_activity_item_header"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/review_item_img_cardvw"
+                >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/review_item_img"
+                />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/review_item_img_cardvw"
+                android:fontFamily="@font/hind_bold"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:text="Tanya Jones"
+                android:id="@+id/review_item_name_tv"
+                android:textColor="@color/fontGrey"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/review_item_img_cardvw"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="11sp"
+                android:layout_marginStart="10dp"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/fontGrey"
+                android:layout_below="@id/review_item_name_tv"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightGrey"
+            android:layout_below="@id/review_activity_item_header"
+            android:layout_marginTop="7dp"
+            android:id="@+id/review_item_separator"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="8dp"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="11sp"
+            android:text="20 mins ago"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/review_item_separator"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/fontGrey"
+            android:id="@+id/review_item_time_tv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="14sp"
+            android:text="5.0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/review_item_separator"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/rating_background"
+            android:backgroundTint="@color/primaryBlue"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/review_item_rating_tv"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_item_rating_tv"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="13sp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+            android:layout_alignStart="@id/review_item_time_tv"
+            android:layout_alignEnd="@id/review_item_rating_tv"
+            android:id="@+id/review_item_review_tv"
+            android:maxLines="4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/review_item_review_tv"
+            android:layout_below="@id/review_item_review_tv"
+            android:text="Read More"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/primaryBlue"
+            android:layout_marginTop="16dp"
+            android:id="@+id/review_item_read_more_btn"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
