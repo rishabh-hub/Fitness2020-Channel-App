@@ -28,6 +28,7 @@
         android:id="@+id/offering_studio_rv"
         android:layout_below="@id/offering_studio_spinner"
         android:layout_marginTop="10dp"
+        android:layout_above="@id/offering_studio_delete_btn"
         />
 
     <Button
