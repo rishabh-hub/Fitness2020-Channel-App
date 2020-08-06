@@ -93,6 +93,7 @@ public class OfferingsActivity extends AppCompatActivity {
 
     public void loadFragment(Fragment fragment)
     {
+        getSupportFragmentManager().popBackStack();
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.offerings_activity_frameLayout,fragment);
         fragmentTransaction.addToBackStack(null);

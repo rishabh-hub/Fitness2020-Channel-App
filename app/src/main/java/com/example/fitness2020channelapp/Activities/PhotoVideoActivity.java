@@ -88,6 +88,7 @@ public class PhotoVideoActivity extends AppCompatActivity {
 
     public void loadFragment(Fragment fragment)
     {
+        getSupportFragmentManager().popBackStack();
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.photo_video_activity_frameLayout,fragment);
         fragmentTransaction.addToBackStack(null);
