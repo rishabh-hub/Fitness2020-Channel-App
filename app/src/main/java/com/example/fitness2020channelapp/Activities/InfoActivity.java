@@ -59,7 +59,7 @@ public class InfoActivity extends AppCompatActivity {
                 "acrobatics, dance, samba, music – at select events, using these as an opportunity to" +
                 " showcase the skills of our students and also demonstrate the beauty, grace, rhythm and " +
                 "discipline of capoeira. For any enquiries about any of our programs, please contact Aparna " +
-                "Massah on aparna@capoeiraindia.in or +918652726738. Check us out: " +
+                "Massah on aparna@capoeiraindia.in or +918652726738. Check us out:  " +
                 "https://www.facebook.com/CentreForCapoeiraIndia/ https://www.capoeiraindia.in/ ");
 
         centrTnC.setText("Amet occaecat nisi sint in deserunt minim ex " +

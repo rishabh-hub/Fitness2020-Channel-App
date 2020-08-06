@@ -76,10 +76,10 @@ public class ActivitiesFacilitiesActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        activityRV = findViewById();
-//        facilityRV = findViewById();
-//        addActivityBtn = findViewById();
-//        addFacilitybtn = findViewById();
-//        backBtn = findViewById(R.id.back_btn);
+        activityRV = findViewById(R.id.actfact_activities_rv);
+        facilityRV = findViewById(R.id.actfact_facilities_rv);
+        addActivityBtn = findViewById(R.id.activity_add);
+        addFacilitybtn = findViewById(R.id.facility_add);
+        backBtn = findViewById(R.id.back_btn);
     }
 }

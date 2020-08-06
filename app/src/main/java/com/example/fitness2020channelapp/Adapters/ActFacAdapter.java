@@ -35,7 +35,7 @@ public class ActFacAdapter extends RecyclerView.Adapter<ActFacAdapter.textVH> {
     @NonNull
     @Override
     public ActFacAdapter.textVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new textVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+        return new textVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.actfact_rv_item,parent,false));
     }
 
     @Override
@@ -64,12 +64,12 @@ public class ActFacAdapter extends RecyclerView.Adapter<ActFacAdapter.textVH> {
         public textVH(@NonNull View itemView) {
             super(itemView);
             if (code == 0){
-//                activityCut = itemView.findViewById();
-//                activityTV = itemView.findViewById();
+                activityCut = itemView.findViewById(R.id.actfact_rv_item_cut);
+                activityTV = itemView.findViewById(R.id.actfact_rv_item_name);
             }
             else {
-//                facilityCut = itemView.findViewById();
-//                facilityTV = itemView.findViewById();
+                facilityCut = itemView.findViewById(R.id.actfact_rv_item_cut);
+                facilityTV = itemView.findViewById(R.id.actfact_rv_item_name);
             }
         }
 
