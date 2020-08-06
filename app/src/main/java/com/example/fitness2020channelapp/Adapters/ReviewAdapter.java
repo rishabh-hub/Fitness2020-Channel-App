@@ -42,7 +42,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.reviewVH> 
 
     private void cycleTextViewExpansion(TextView tv,TextView txt){
         int collapsedMaxLines = 4;
-        String text = tv.getMaxLines()==collapsedMaxLines?"View Less":"View More";
+        String text = tv.getMaxLines()==collapsedMaxLines?"Read Less":"Read More";
         ObjectAnimator animation = ObjectAnimator.ofInt(tv, "maxLines", tv.getMaxLines() == collapsedMaxLines? tv.getLineCount() : collapsedMaxLines);
         txt.setText(text);
         animation.setDuration(150).start();
