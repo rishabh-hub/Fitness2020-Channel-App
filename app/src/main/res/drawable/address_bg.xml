@@ -7,7 +7,7 @@
             <corners
                 android:radius="7dp"/>
             <solid
-                android:color="@color/secondryBlue"
+                android:color="@color/lightBlue"
                 />
 
         </shape>
