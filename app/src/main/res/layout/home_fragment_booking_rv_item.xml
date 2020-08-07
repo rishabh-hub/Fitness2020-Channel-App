@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/manager_card_bg"
+    android:paddingBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_rv_item_header"
+        android:layout_marginTop="11dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:text="Ted Fox"
+            android:layout_toLeftOf="@id/home_fragment_rv_item_redeem"
+            android:textSize="15sp"
+            android:fontFamily="@font/hind_bold"
+            android:textColor="@color/fontGrey"
+            android:id="@+id/home_fragment_rv_item_name"
+            android:layout_marginEnd="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/home_fragment_rv_item_comment"
+            android:id="@+id/home_fragment_rv_item_redeem"
+            android:text="Redeem Code"
+            android:textColor="@color/primaryBlue"
+            android:textSize="12sp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:background="@drawable/redeem_bg"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="5dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/home_fragment_rv_item_call"
+            android:src="@drawable/ic_comment"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/home_fragment_rv_item_comment"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/home_fragment_rv_item_call"
+            android:layout_marginEnd="13dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGrey"
+        android:layout_below="@id/booking_rv_item_header"
+        android:layout_marginTop="3dp"
+        android:id="@+id/home_fragment_rv_item_separator_line"
+        android:orientation="horizontal"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_fragment_rv_item_content"
+        android:layout_below="@id/home_fragment_rv_item_separator_line"
+        android:layout_marginTop="6dp"
+        >
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Group  of :"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/home_fragment_rv_item_group_tv"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="12sp"
+            android:fontFamily="@font/hind_regular"
+            android:layout_toRightOf="@id/home_fragment_rv_item_group_tv"
+            android:id="@+id/home_fragment_rv_item_group"
+            android:layout_alignStart="@id/home_fragment_rv_item_category"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Time :"
+            android:textColor="@color/primaryBlue"
+            android:layout_below="@+id/home_fragment_rv_item_group_tv"
+            android:id="@+id/home_fragment_rv_item_time_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:43"
+            android:textSize="12sp"
+            android:fontFamily="@font/hind_regular"
+            android:layout_toRightOf="@id/home_fragment_rv_item_time_tv"
+            android:layout_below="@+id/home_fragment_rv_item_group"
+            android:id="@+id/home_fragment_rv_item_time"
+            android:layout_marginTop="6dp"
+            android:layout_alignStart="@id/home_fragment_rv_item_category"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Category :"
+            android:textColor="@color/primaryBlue"
+            android:layout_below="@+id/home_fragment_rv_item_time_tv"
+            android:id="@+id/home_fragment_rv_item_category_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event"
+            android:textSize="12sp"
+            android:fontFamily="@font/hind_regular"
+            android:layout_toRightOf="@id/home_fragment_rv_item_category_tv"
+            android:layout_below="@+id/home_fragment_rv_item_time"
+            android:id="@+id/home_fragment_rv_item_category"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="For :"
+            android:textColor="@color/primaryBlue"
+            android:layout_below="@+id/home_fragment_rv_item_category_tv"
+            android:id="@+id/home_fragment_rv_item_for_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga training live with Abhishek Bhaskar"
+            android:textSize="12sp"
+            android:fontFamily="@font/hind_regular"
+            android:layout_toRightOf="@id/home_fragment_rv_item_for_tv"
+            android:layout_below="@+id/home_fragment_rv_item_category"
+            android:id="@+id/home_fragment_rv_item_for"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignStart="@id/home_fragment_rv_item_category"
+            android:layout_toLeftOf="@id/home_fragment_rv_item_details"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_fragment_rv_item_price"
+            android:textSize="17sp"
+            android:fontFamily="@font/hind_bold"
+            android:text="₹ 999.00 "
+            android:textColor="@color/fontGrey"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_fragment_rv_item_details"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="View Details "
+            android:layout_alignBottom="@id/home_fragment_rv_item_for"
+            android:textColor="@color/primaryBlue"
+            android:layout_toLeftOf="@id/home_fragment_rv_item_details_imgvw"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="6dp"
+            android:id="@+id/home_fragment_rv_item_details_imgvw"
+            android:layout_alignBottom="@id/home_fragment_rv_item_for"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_hollow_arrow"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="7dp"
+            android:rotation="270"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
