@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         attachId();
 
+        loadFragment(new HomeFragment());
+
         menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
