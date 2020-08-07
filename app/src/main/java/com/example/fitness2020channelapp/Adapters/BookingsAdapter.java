@@ -83,6 +83,10 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.bookin
                 redeemCode.setVisibility(View.VISIBLE);
             else
                 redeemCode.setVisibility(View.GONE);
+
+            if(bookingModel.getCategory().equals("Events") || bookingModel.getCategory().equals("Vouchers"))
+                detailsTV.setText("For:");
+            else detailsTV.setText("Activity:");
         }
 
     }
