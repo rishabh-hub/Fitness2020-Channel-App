@@ -61,7 +61,7 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.bookin
 
         public void populateBookings(BookingModel bookingModel) {
             name.setText(bookingModel.getName());
-            groupSize.setText(bookingModel.getGroupSize());
+            groupSize.setText(Integer.toString(bookingModel.getGroupSize()));
             time.setText(bookingModel.getTime());
             category.setText(bookingModel.getCategory());
             details.setText(bookingModel.getDetail());
