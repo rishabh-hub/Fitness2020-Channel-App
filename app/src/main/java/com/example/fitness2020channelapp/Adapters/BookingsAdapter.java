@@ -28,7 +28,7 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.bookin
     @NonNull
     @Override
     public BookingsAdapter.bookingVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new bookingVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+        return new bookingVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_fragment_booking_rv_item,parent,false));
     }
 
     @Override
@@ -46,17 +46,17 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.bookin
         ImageView callBtn,hasComment;
         public bookingVH(@NonNull View itemView) {
             super(itemView);
-//            name = itemView.findViewById();
-//            groupSize = itemView.findViewById();
-//            time = itemView.findViewById();
-//            category = itemView.findViewById();
-//            details = itemView.findViewById();          //details will come here
-//            detailsTV = itemView.findViewById();        //text view before details
-//            price = itemView.findViewById();
-//            redeemCode = itemView.findViewById();
-//            viewDetailsBtn = itemView.findViewById();
-//            callBtn = itemView.findViewById();
-//            hasComment = itemView.findViewById();
+            name = itemView.findViewById(R.id.home_fragment_rv_item_name);
+            groupSize = itemView.findViewById(R.id.home_fragment_rv_item_group);
+            time = itemView.findViewById(R.id.home_fragment_rv_item_time);
+            category = itemView.findViewById(R.id.home_fragment_rv_item_category);
+            details = itemView.findViewById(R.id.home_fragment_rv_item_for);          //details will come here
+            detailsTV = itemView.findViewById(R.id.home_fragment_rv_item_for_tv);        //text view before details
+            price = itemView.findViewById(R.id.home_fragment_rv_item_price);
+            redeemCode = itemView.findViewById(R.id.home_fragment_rv_item_redeem);
+            viewDetailsBtn = itemView.findViewById(R.id.home_fragment_rv_item_details);
+            callBtn = itemView.findViewById(R.id.home_fragment_rv_item_call);
+            hasComment = itemView.findViewById(R.id.home_fragment_rv_item_comment);
         }
 
         public void populateBookings(BookingModel bookingModel) {
