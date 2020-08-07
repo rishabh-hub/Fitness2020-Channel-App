@@ -121,10 +121,10 @@ public class HomeFragment extends Fragment {
     }
 
     private void attachID() {
-//        statusSpinner = view.findViewById();
-//        categorySpinner = view.findViewById();
-//        bookingsRV = view.findViewById();
-//        dateChips = view.findViewById();
+        statusSpinner = view.findViewById(R.id.home_fragment_status_spinner);
+        categorySpinner = view.findViewById(R.id.home_fragment_categories_spinner);
+        bookingsRV = view.findViewById(R.id.home_fragment_booking_rv);
+        dateChips = view.findViewById(R.id.date_chipgrp);
     }
 
     private void setAdapters() {
