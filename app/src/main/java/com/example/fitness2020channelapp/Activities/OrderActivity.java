@@ -54,19 +54,18 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        backBtn = findViewById();
-//        nameTV = findViewById();
-//        categoryTV = findViewById();
-//        activityTV = findViewById();
-//        bookedDateTV = findViewById();
-//        bookedTimeTV = findViewById();
-//        bookingDateTimeTV = findViewById();
-//        groupSizeTV = findViewById();
-//        grossAmountTV = findViewById();
-//        taxTV = findViewById();
-//        netAmountTV = findViewById();
-//        commentTV = findViewById();
-//        backBtn = findViewById();
+        backBtn = findViewById(R.id.back_btn);
+        nameTV = findViewById(R.id.order_name);
+        categoryTV = findViewById(R.id.order_category);
+        activityTV = findViewById(R.id.order_activity);
+        bookedDateTV = findViewById(R.id.order_date);
+        bookedTimeTV = findViewById(R.id.order_timings);
+        bookingDateTimeTV = findViewById(R.id.order_bookingtime);
+        groupSizeTV = findViewById(R.id.order_group);
+        grossAmountTV = findViewById(R.id.order_payment_grossamount);
+        taxTV = findViewById(R.id.order_payment_tax);
+        netAmountTV = findViewById(R.id.order_net_amount);
+        commentTV = findViewById(R.id.order_comment_tv);
 
     }
 }

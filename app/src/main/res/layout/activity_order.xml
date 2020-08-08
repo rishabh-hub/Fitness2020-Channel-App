@@ -286,7 +286,7 @@
         android:layout_toRightOf="@id/order_date_tv"
         android:layout_below="@id/order_timings"
         android:layout_marginTop="19dp"
-        android:text="7:30AM - 9:30AM"
+        android:text="17/05/20"
         android:textSize="15sp"
         android:fontFamily="@font/montserrat_bold"
         android:textColor="@color/primaryBlue"
@@ -382,6 +382,7 @@
             android:layout_below="@+id/order_payment_tax"
             android:layout_marginTop="16dp"
             android:id="@+id/order_separator"
+            android:layout_marginHorizontal="35dp"
             />
 
         <TextView
