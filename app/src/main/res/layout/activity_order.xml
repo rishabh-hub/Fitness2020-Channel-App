@@ -12,7 +12,9 @@
         android:id="@+id/tlbr_rellay"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/primaryBlue">
+        android:background="@color/primaryBlue"
+        android:nestedScrollingEnabled="true"
+        >
 
         <ImageView
             android:id="@+id/back_btn"
@@ -86,19 +88,26 @@
                 android:tint="@color/tintYellow"
                 />
 
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/order_comments_heading"
+                android:layout_below="@id/order_comments_heading"
+                android:nestedScrollingEnabled="true"
+                >
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="51dp"
-                android:layout_below="@id/order_comments_heading"
-                android:layout_alignStart="@id/order_comments_heading"
+                android:layout_height="wrap_content"
                 android:id="@+id/order_comment_tv"
                 android:text="VIP Customer, refferred by Mr Malick. Potential long time customer. "
                 android:textSize="15sp"
                 android:fontFamily="@font/ubuntu_regular"
                 android:layout_marginTop="6dp"
                 android:textColor="@color/white"
-                android:overScrollMode="always"
+                android:paddingBottom="10dp"
                 />
+
+            </ScrollView>
         </RelativeLayout>
 
         <ImageView
