@@ -41,12 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tlbr_rellay"
-        android:paddingBottom="10dp"
         >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         >
 
     <RelativeLayout
@@ -97,7 +97,6 @@
                 android:fontFamily="@font/ubuntu_regular"
                 android:layout_marginTop="6dp"
                 android:textColor="@color/white"
-                android:isScrollContainer="true"
                 />
         </RelativeLayout>
 
