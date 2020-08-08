@@ -1,9 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.OrderActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/tlbr_rellay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBlue">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Order Details"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_marginStart="40dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_comments_container"
+        android:layout_below="@id/tlbr_rellay"
+        android:layout_marginTop="21dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="233dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/day_bg"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/order_comments_heading"
+                />
+            
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_comment"
+                android:layout_alignParentEnd="true"
+                android:tint="@color/tintYellow"
+                />
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/order_comments_heading"
+                android:layout_alignStart="@id/order_comments_heading"
+                android:id="@+id/order_comment_tv"
+                android:text="VIP Customer, refferred by Mr Malick. Potential long time customer. "
+                android:textSize="15sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_order_illustration"
+            android:layout_marginEnd="9dp"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_comments_container"
+        android:layout_marginTop="30dp"
+        android:text="Name:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_name_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_name_tv"
+        android:layout_below="@id/order_comments_container"
+        android:layout_marginTop="30dp"
+        android:text="Rohan Joshi"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_name"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_name_tv"
+        android:layout_marginTop="19dp"
+        android:text="Category:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_category_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_category_tv"
+        android:layout_below="@id/order_name"
+        android:layout_marginTop="19dp"
+        android:text="Events"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_category"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_category_tv"
+        android:layout_marginTop="19dp"
+        android:text="Activity:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_activity_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_activity_tv"
+        android:layout_below="@id/order_category"
+        android:layout_marginTop="19dp"
+        android:text="Yoga training live with Abhishek Bhaskar"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_activity"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_activity"
+        android:layout_marginTop="19dp"
+        android:text="Booking Time:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_bookingtime_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_bookingtime_tv"
+        android:layout_below="@id/order_activity"
+        android:layout_marginTop="19dp"
+        android:text="14:43 , 4 Jun 2020"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_bookingtime"
+        android:layout_marginStart="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_bookingtime_tv"
+        android:layout_marginTop="19dp"
+        android:text="Group of:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_group_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_group_tv"
+        android:layout_below="@id/order_bookingtime"
+        android:layout_marginTop="19dp"
+        android:text="5"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_group"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_group_tv"
+        android:layout_marginTop="19dp"
+        android:text="Timings:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_timings_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_timings_tv"
+        android:layout_below="@id/order_group"
+        android:layout_marginTop="19dp"
+        android:text="7:30AM - 9:30AM"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_timings"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_timings_tv"
+        android:layout_marginTop="19dp"
+        android:text="Date:"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="17sp"
+        android:layout_marginStart="46dp"
+        android:id="@+id/order_date_tv"
+        android:textColor="@color/fontGrey"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_date_tv"
+        android:layout_below="@id/order_timings"
+        android:layout_marginTop="19dp"
+        android:text="7:30AM - 9:30AM"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryBlue"
+        android:id="@+id/order_date"
+        android:layout_alignStart="@+id/order_bookingtime"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_payment_details_container"
+        android:layout_below="@+id/order_date_tv"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="18dp"
+        android:background="@drawable/manager_card_bg"
+        android:paddingVertical="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Details"
+            android:textSize="17sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/fontGrey"
+            android:layout_marginStart="11dp"
+            android:id="@+id/order_payment_details_header"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gross Amount"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="15sp"
+            android:layout_below="@+id/order_payment_details_header"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="38dp"
+            android:id="@+id/order_payment_grossamount_tv"
+            android:textColor="@color/fontGrey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_payment_grossamount_tv"
+            android:layout_below="@+id/order_payment_details_header"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/primaryBlue"
+            android:text="₹ 425.00"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_marginEnd="13dp"
+            android:id="@+id/order_payment_grossamount"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="15sp"
+            android:layout_below="@+id/order_payment_grossamount_tv"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="38dp"
+            android:id="@+id/order_payment_tax_tv"
+            android:textColor="@color/fontGrey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_payment_tax_tv"
+            android:layout_below="@+id/order_payment_grossamount_tv"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/primaryBlue"
+            android:text="₹ 74.00"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_marginEnd="13dp"
+            android:id="@+id/order_payment_tax"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightGrey"
+            android:layout_below="@+id/order_payment_tax"
+            android:layout_marginTop="16dp"
+            android:id="@+id/order_separator"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_separator"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="17sp"
+            android:text="Net Amount"
+            android:textColor="@color/fontGrey"
+            android:layout_marginStart="38dp"
+            android:id="@+id/order_net_amount_tv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/order_separator"
+            android:layout_toRightOf="@+id/order_net_amount_tv"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="13dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/primaryBlue"
+            android:gravity="end"
+            android:text="₹ 499.00"
+            android:id="@+id/order_net_amount"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
