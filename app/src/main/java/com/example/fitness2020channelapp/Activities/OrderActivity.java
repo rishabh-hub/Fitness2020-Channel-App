@@ -49,8 +49,10 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     private void getData() {
-        order = new OrderDetailModel("Rishabh Singh","Event","Functional Training with Farhan Aktar",
-                "21 Jun 2020","14:23",4,"8:00","28 Jun 2020",true,false,2500,70,"7%",2570,"Very important client.");
+        order = new OrderDetailModel("Rishabh Singh","Event","Functional Training with Farhan Aktar and Paritosh Varshney",
+                "21 Jun 2020","14:23",4,"8:00","28 Jun 2020",true,
+                false,2500,70,"7%",2570,
+                "VIP Customer, referred by Mr Malick. Potential long time customer. Take good care, give cold coffee.");
     }
 
     private void attachID() {
