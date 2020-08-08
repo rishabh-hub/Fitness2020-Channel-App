@@ -1,6 +1,7 @@
 package com.example.fitness2020channelapp.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.fitness2020channelapp.Activities.OrderActivity;
 import com.example.fitness2020channelapp.Models.BookingModel;
 import com.example.fitness2020channelapp.R;
 
@@ -71,6 +73,8 @@ public class BookingsAdapter extends RecyclerView.Adapter<BookingsAdapter.bookin
                 @Override
                 public void onClick(View v) {
                     //go to internal page
+                    Intent intent = new Intent(itemView.getContext(), OrderActivity.class);
+                    itemView.getContext().startActivity(intent);
                 }
             });
 
