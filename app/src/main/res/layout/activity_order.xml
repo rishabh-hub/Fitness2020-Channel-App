@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Activities.OrderActivity">
 
     <RelativeLayout
@@ -36,12 +37,21 @@
 
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlbr_rellay"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/order_comments_container"
-        android:layout_below="@id/tlbr_rellay"
         android:layout_marginTop="21dp"
         >
 
@@ -49,11 +59,13 @@
             android:layout_width="233dp"
             android:layout_height="101dp"
             android:layout_marginStart="19dp"
+            android:layout_marginEnd="9dp"
             android:background="@drawable/day_bg"
             android:paddingLeft="15dp"
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="15dp"
+            android:layout_toLeftOf="@+id/order_imgvw"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -93,6 +105,7 @@
             android:layout_alignParentEnd="true"
             android:src="@drawable/ic_order_illustration"
             android:layout_marginEnd="9dp"
+            android:id="@+id/order_imgvw"
             />
 
     </RelativeLayout>
@@ -106,7 +119,7 @@
         android:text="Name:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_name_tv"
         android:textColor="@color/fontGrey"
 
@@ -134,7 +147,7 @@
         android:text="Category:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_category_tv"
         android:textColor="@color/fontGrey"
 
@@ -162,7 +175,7 @@
         android:text="Activity:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_activity_tv"
         android:textColor="@color/fontGrey"
 
@@ -190,7 +203,7 @@
         android:text="Booking Time:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_bookingtime_tv"
         android:textColor="@color/fontGrey"
 
@@ -218,7 +231,7 @@
         android:text="Group of:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_group_tv"
         android:textColor="@color/fontGrey"
 
@@ -246,7 +259,7 @@
         android:text="Timings:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_timings_tv"
         android:textColor="@color/fontGrey"
 
@@ -274,7 +287,7 @@
         android:text="Date:"
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="17sp"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="19dp"
         android:id="@+id/order_date_tv"
         android:textColor="@color/fontGrey"
 
@@ -416,5 +429,8 @@
 
     </RelativeLayout>
 
+    </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
