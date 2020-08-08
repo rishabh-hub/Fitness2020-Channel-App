@@ -3,6 +3,7 @@ package com.example.fitness2020channelapp.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +25,13 @@ public class OrderActivity extends AppCompatActivity {
         attachID();
         getData();
         setData();
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void setData() {
@@ -58,6 +66,7 @@ public class OrderActivity extends AppCompatActivity {
 //        taxTV = findViewById();
 //        netAmountTV = findViewById();
 //        commentTV = findViewById();
+//        backBtn = findViewById();
 
     }
 }
