@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,7 +43,8 @@ public class PastOrdersAdapter extends RecyclerView.Adapter<PastOrdersAdapter.pa
     }
 
     public class pastOrderVH extends RecyclerView.ViewHolder {
-        TextView name,price,date,activity,viewDetailBtn;
+        TextView name,price,date,activity;
+        LinearLayout viewDetailBtn;
         public pastOrderVH(@NonNull View itemView) {
             super(itemView);
 //            name = itemView.findViewById();
