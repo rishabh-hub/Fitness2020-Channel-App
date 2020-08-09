@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/manager_card_bg"
+    android:paddingVertical="9dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ordr_fragment_item_header"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ted Fox"
+            android:fontFamily="@font/hind_bold"
+            android:textSize="15sp"
+            android:textColor="@color/fontGrey"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:id="@+id/order_fragment_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 999.00"
+            android:fontFamily="@font/hind_bold"
+            android:textSize="17sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGrey"
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/order_fragment_separator"
+        android:layout_below="@id/ordr_fragment_item_header"
+        android:orientation="horizontal"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_fragment_separator"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/primaryBlue"
+            android:text="Order Date:"
+            android:id="@+id/order_fragment_date_tv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/order_fragment_date_tv"
+            android:text="21/05/2020"
+            android:textSize="15sp"
+            android:fontFamily="@font/hind_regular"
+            android:textColor="@color/fontGrey"
+            android:id="@+id/order_fragment_date"
+            android:layout_marginStart="7dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/primaryBlue"
+            android:text="Activity:"
+            android:id="@+id/order_fragment_activity_tv"
+            android:layout_below="@+id/order_fragment_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/order_fragment_activity_tv"
+            android:layout_below="@+id/order_fragment_date"
+            android:text="Zumba"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/hind_regular"
+            android:textColor="@color/fontGrey"
+            android:layout_alignStart="@id/order_fragment_date"
+            android:id="@+id/order_fragment_activity"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/order_fragment_activity"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/order_fragment_more_button"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Details"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="12sp"
+            android:textColor="@color/primaryBlue"
+            />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="7dp"
+                android:src="@drawable/ic_hollow_arrow"
+                android:rotation="270"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
