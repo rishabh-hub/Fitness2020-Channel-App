@@ -3,6 +3,7 @@ package com.example.fitness2020channelapp.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -68,6 +69,7 @@ public class OrderActivity extends AppCompatActivity {
         taxTV = findViewById(R.id.order_payment_tax);
         netAmountTV = findViewById(R.id.order_net_amount);
         commentTV = findViewById(R.id.order_comment_tv);
+        commentTV.setMovementMethod(new ScrollingMovementMethod());
 
     }
 }
