@@ -28,6 +28,7 @@
             android:id="@+id/analytics_fragment_card"
             android:layout_below="@id/analytics_fragment_heading_tv"
             android:background="@drawable/manager_card_bg"
+            android:layout_marginHorizontal="13dp"
             >
 
             <TextView
@@ -53,6 +54,7 @@
                 android:text="JAN ‘20"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="31dp"
+                android:id="@+id/analytics_frag_last_month"
                 />
 
             <LinearLayout
@@ -104,6 +106,7 @@
                 android:layout_below="@+id/analytics_fragment_this_amount"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="5dp"
+                android:id="@+id/analytics_fragment_current_visits"
                 />
 
             <ImageView
@@ -130,6 +133,7 @@
             android:popupElevation="0dp"
             android:layout_marginStart="21dp"
             android:id="@+id/analytics_fragment_date_spinner"
+            android:paddingHorizontal="5dp"
             />
 
         <LinearLayout
@@ -185,6 +189,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/white"
                             android:text="7963"
+                            android:id="@+id/analytics_frag_view_count"
                             />
 
                         <ImageView
@@ -233,6 +238,7 @@
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:text="10"
+                        android:id="@+id/analytics_frag_dirreq_count"
                         />
 
                     <ImageView
@@ -293,6 +299,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/white"
                             android:text="25"
+                            android:id="@+id/analytics_frag_checkin_count"
                             />
 
                         <ImageView
@@ -343,6 +350,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/white"
                             android:text="8"
+                            android:id="@+id/analytics_frag_bookmark_count"
                             />
 
                         <ImageView
@@ -372,6 +380,7 @@
             android:layout_below="@id/analytics_frag_cards_container"
             android:layout_marginTop="42dp"
             android:background="@drawable/campaign_bg"
+            android:id="@+id/analytics_frag_new_campaign"
             >
 
             <TextView

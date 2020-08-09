@@ -75,19 +75,17 @@ public class AnalyticsFragment extends Fragment {
     }
 
     private void attachID() {
-//        lastMonthName = view.findViewById(R.id.);
-//        lastMonthRevenue = view.findViewById(R.id.);
-//        currentRevenue = view.findViewById(R.id.);
-//        currentVisits = view.findViewById(R.id.);
-//        pageViewCount = view.findViewById(R.id.);
-//        directionReqCount = view.findViewById(R.id.);
-//        checkinCount = view.findViewById(R.id.);
-//        bookmarkCount = view.findViewById(R.id.);
-//        analyticsDetailBtn = view.findViewById(R.id.);
-//        newCampaignBtn = view.findViewById(R.id.);
-//        monthSlotSpinner = view.findViewById(R.id.);
-
-
+        lastMonthName = view.findViewById(R.id.analytics_frag_last_month);
+        lastMonthRevenue = view.findViewById(R.id.analytics_fragment_last_amount);
+        currentRevenue = view.findViewById(R.id.analytics_fragment_this_amount);
+        currentVisits = view.findViewById(R.id.analytics_fragment_current_visits);
+        pageViewCount = view.findViewById(R.id.analytics_frag_view_count);
+        directionReqCount = view.findViewById(R.id.analytics_frag_dirreq_count);
+        checkinCount = view.findViewById(R.id.analytics_frag_checkin_count);
+        bookmarkCount = view.findViewById(R.id.analytics_frag_bookmark_count);
+        analyticsDetailBtn = view.findViewById(R.id.analytics_fragment_card);
+        newCampaignBtn = view.findViewById(R.id.analytics_frag_new_campaign);
+        monthSlotSpinner = view.findViewById(R.id.analytics_fragment_date_spinner);
 
     }
 }
