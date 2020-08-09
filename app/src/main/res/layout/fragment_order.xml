@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/order_fragment_rv"
         android:layout_marginHorizontal="10dp"
-        android:paddingBottom="60dp"
+        android:paddingBottom="70dp"
+        android:nestedScrollingEnabled="false"
         />
 
 </ScrollView>
