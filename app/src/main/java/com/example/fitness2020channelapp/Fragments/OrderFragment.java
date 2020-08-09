@@ -69,7 +69,7 @@ public class OrderFragment extends Fragment {
     }
 
     private void addDummyData() {
-        for (int i=0;i<4;i++)
+        for (int i=0;i<10;i++)
             pastOrderModels.add(new PastOrderModel("Rohan Joshi",1400,"21/05/2020","Webinar"));
     }
 
