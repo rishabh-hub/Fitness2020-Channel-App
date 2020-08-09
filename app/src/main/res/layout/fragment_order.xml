@@ -21,6 +21,7 @@
         android:layout_marginBottom="18dp"
         android:backgroundTint="@color/primaryBlue"
         android:src="@drawable/ic_download_fab"
+        android:id="@+id/order_fragment_download_fab"
         />
 
 

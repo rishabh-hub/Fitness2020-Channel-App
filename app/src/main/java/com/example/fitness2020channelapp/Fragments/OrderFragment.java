@@ -78,7 +78,7 @@ public class OrderFragment extends Fragment {
     }
 
     private void attachID() {
-//        pastOrderRV = view.findViewById();
-//        downloadBtn = view.findViewById();
+        pastOrderRV = view.findViewById(R.id.order_fragment_rv);
+        downloadBtn = view.findViewById(R.id.order_fragment_download_fab);
     }
 }

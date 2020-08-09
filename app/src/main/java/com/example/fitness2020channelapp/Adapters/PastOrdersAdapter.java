@@ -29,7 +29,7 @@ public class PastOrdersAdapter extends RecyclerView.Adapter<PastOrdersAdapter.pa
     @NonNull
     @Override
     public PastOrdersAdapter.pastOrderVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new pastOrderVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+        return new pastOrderVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.order_fragment_rv_item,parent,false));
     }
 
     @Override
@@ -47,11 +47,11 @@ public class PastOrdersAdapter extends RecyclerView.Adapter<PastOrdersAdapter.pa
         LinearLayout viewDetailBtn;
         public pastOrderVH(@NonNull View itemView) {
             super(itemView);
-//            name = itemView.findViewById();
-//            price = itemView.findViewById();
-//            date = itemView.findViewById();
-//            activity = itemView.findViewById();
-//            viewDetailBtn = itemView.findViewById();
+            name = itemView.findViewById(R.id.order_fragment_name);
+            price = itemView.findViewById(R.id.order_fragment_item_price);
+            date = itemView.findViewById(R.id.order_fragment_date);
+            activity = itemView.findViewById(R.id.order_fragment_activity);
+            viewDetailBtn = itemView.findViewById(R.id.order_fragment_more_button);
         }
 
         public void populatePastOrders(PastOrderModel pastOrderModel) {
