@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.fitness2020channelapp.Adapters.FeedbackFragmentTabAdapter;
 import com.example.fitness2020channelapp.Adapters.PhotoPageAdapter;
 import com.example.fitness2020channelapp.R;
 import com.google.android.material.tabs.TabLayout;
@@ -21,7 +22,7 @@ public class FeedbackFragment extends Fragment {
 
     View view;
     TabLayout tabLayout;
-    PhotoPageAdapter feedbackSlideAdapter;
+    FeedbackFragmentTabAdapter feedbackSlideAdapter;
     ViewPager viewPager;
     Fragment fragment;
 
@@ -37,7 +38,7 @@ public class FeedbackFragment extends Fragment {
 
         attachID();
 
-        feedbackSlideAdapter=new PhotoPageAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,tabLayout.getTabCount());
+        feedbackSlideAdapter=new FeedbackFragmentTabAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,tabLayout.getTabCount());
         viewPager.setAdapter(feedbackSlideAdapter);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
