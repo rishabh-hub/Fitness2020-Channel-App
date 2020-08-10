@@ -61,6 +61,7 @@
         app:itemTextAppearanceInactive="@style/BottomNavigationView"
         app:itemIconTint="@drawable/bottom_nav_tint"
         app:menu="@menu/bottomnav_menu"
+
         android:layout_alignParentBottom="true"/>
 
 

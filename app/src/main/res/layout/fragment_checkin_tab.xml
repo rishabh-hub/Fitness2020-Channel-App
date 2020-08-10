@@ -6,7 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.CheckinTabFragment">
 
-    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -160,6 +168,8 @@
             android:id="@+id/checkin_tab_dob_et"
             android:paddingVertical="15dp"
             android:paddingHorizontal="15dp"
+            android:focusable="false"
+
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -198,7 +208,7 @@
             android:paddingHorizontal="15dp"
             android:fontFamily="@font/ubuntu_regular"
             android:textSize="17sp"
-
+            android:focusable="false"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -219,4 +229,6 @@
         android:id="@+id/checkin_tab_submit_btn"
         />
 
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
