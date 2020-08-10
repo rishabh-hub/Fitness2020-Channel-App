@@ -144,6 +144,8 @@
         android:hint="D.O.B"
         android:id="@+id/checkin_tab_dob_et_container"
         app:endIconDrawable="@drawable/ic_calender"
+        app:endIconMode="custom"
+        app:endIconTint="@color/primaryBlue"
         >
 
         <EditText
@@ -180,6 +182,8 @@
         android:hint="Anniversary"
         android:id="@+id/checkin_tab_anniversary_et_container"
         app:endIconDrawable="@drawable/ic_calender"
+        app:endIconMode="custom"
+        app:endIconTint="@color/primaryBlue"
         >
 
         <EditText
@@ -194,6 +198,7 @@
             android:paddingHorizontal="15dp"
             android:fontFamily="@font/ubuntu_regular"
             android:textSize="17sp"
+
             />
 
     </com.google.android.material.textfield.TextInputLayout>
