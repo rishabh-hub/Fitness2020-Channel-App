@@ -81,14 +81,14 @@ public class FeedbackFragment extends Fragment {
 
     private void attachID() {
         tabLayout = view.findViewById(R.id.tab_layout);
-//        viewPager = view.findViewById(R.id.);
+        viewPager = view.findViewById(R.id.feedback_viewpager);
     }
 
     public void loadFragment(Fragment fragment)
     {
         getChildFragmentManager().popBackStack();
         FragmentTransaction fragmentTransaction=getChildFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.,fragment);
+        fragmentTransaction.replace(R.id.feedback_frameLayout,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
