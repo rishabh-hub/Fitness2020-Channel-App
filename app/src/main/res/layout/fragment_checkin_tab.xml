@@ -1,13 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.CheckinTabFragment">
 
+    
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checin_tab_header_tv"
+        android:text="Kindly fiil in these details"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/hind_bold"
+        android:textColor="@color/fontGrey"
+        />
+    
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/lightGrey"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_below="@id/checin_tab_header_tv"
+        android:textColorHint="@color/primaryBlue"
+        app:hintTextColor="@color/primaryBlue"
+        android:hint="Name"
+        android:id="@+id/checkin_tab_name_et_container"
+        >
 
-</FrameLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/checkin_tab_name_et"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="17sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/lightGrey"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_below="@id/checkin_tab_name_et_container"
+        android:textColorHint="@color/primaryBlue"
+        app:hintTextColor="@color/primaryBlue"
+        android:hint="+91 9999955555"
+        android:id="@+id/checkin_tab_number_et_container"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+91 9999955555"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/checkin_tab_number_et"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="17sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/lightGrey"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_below="@id/checkin_tab_number_et_container"
+        android:textColorHint="@color/primaryBlue"
+        app:hintTextColor="@color/primaryBlue"
+        android:hint="Email Id"
+        android:id="@+id/checkin_tab_email_et_container"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/checkin_tab_email_et"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="17sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/lightGrey"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_below="@id/checkin_tab_email_et_container"
+        android:textColorHint="@color/primaryBlue"
+        app:hintTextColor="@color/primaryBlue"
+        android:hint="D.O.B"
+        android:id="@+id/checkin_tab_dob_et_container"
+        app:endIconDrawable="@drawable/ic_calender"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D.O.B"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/checkin_tab_dob_et"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/lightGrey"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_below="@id/checkin_tab_dob_et_container"
+        android:textColorHint="@color/primaryBlue"
+        app:hintTextColor="@color/primaryBlue"
+        android:hint="Anniversary"
+        android:id="@+id/checkin_tab_anniversary_et_container"
+        app:endIconDrawable="@drawable/ic_calender"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anniversary"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryBlue"
+            android:id="@+id/checkin_tab_anniversary_et"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="17sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkin_tab_anniversary_et_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Submit"
+        android:background="@drawable/button_bg"
+        android:paddingHorizontal="50dp"
+        android:id="@+id/checkin_tab_submit_btn"
+        />
+
+</RelativeLayout>
