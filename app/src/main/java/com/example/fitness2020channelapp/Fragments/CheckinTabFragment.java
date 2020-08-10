@@ -165,13 +165,13 @@ public class CheckinTabFragment extends Fragment {
     }
 
     private void attachID() {
-//        nameET = view.findViewById(R.id.);
-//        mobileNOET = view.findViewById(R.id.);
-//        emailIDET = view.findViewById(R.id.);
-//        dobET = view.findViewById(R.id.);
-//        anniversaryET = view.findViewById(R.id.);
-//        submitBtn = view.findViewById(R.id.);
-//        dobCal = view.findViewById(R.id.);
-//        anniversaryCal = view.findViewById(R.id.):
+        nameET = view.findViewById(R.id.checkin_tab_name_et);
+        mobileNOET = view.findViewById(R.id.checkin_tab_number_et);
+        emailIDET = view.findViewById(R.id.checkin_tab_email_et);
+        dobET = view.findViewById(R.id.checkin_tab_dob_et);
+        anniversaryET = view.findViewById(R.id.checkin_tab_anniversary_et);
+        submitBtn = view.findViewById(R.id.checkin_tab_submit_btn);
+        dobCal = view.findViewById(R.id.checkin_tab_dob_et_container);
+        anniversaryCal = view.findViewById(R.id.checkin_tab_anniversary_et_container);
     }
 }
