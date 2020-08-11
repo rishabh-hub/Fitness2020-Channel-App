@@ -52,11 +52,11 @@ public class FeedbackTabQ1Fragment extends Fragment {
     }
 
     private void attachID() {
-//        next = view.findViewById(R.id.);
-//        serviceRating = view.findViewById(R.id.);
-//        trainingRating = view.findViewById(R.id.);
-//        amenitiesRating = view.findViewById(R.id.);
-//        overallRating = view.findViewById(R.id.);
+        next = view.findViewById(R.id.feedback_frag_services_next_btn);
+        serviceRating = view.findViewById(R.id.smile_rating_services);
+        trainingRating = view.findViewById(R.id.smile_rating_training);
+        amenitiesRating = view.findViewById(R.id.smile_rating_amenities);
+        overallRating = view.findViewById(R.id.smile_rating_overall);
     }
 
     private int getRating(SmileyRating rating) {

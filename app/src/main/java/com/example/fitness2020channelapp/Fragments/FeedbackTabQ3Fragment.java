@@ -56,9 +56,9 @@ public class FeedbackTabQ3Fragment extends Fragment {
     }
 
     private void attachID() {
-//        next = view.findViewById(R.id.);
-//        back = view.findViewById(R.id.);
-//        complaintET = view.findViewById(R.id.);
+        next = view.findViewById(R.id.feedback_frag_complaint_next_btn);
+        back = view.findViewById(R.id.feedback_frag_complaint_back_btn);
+        complaintET = view.findViewById(R.id.feedback_frag_complaint_et);
     }
 
     public void loadFragment(Fragment fragment)

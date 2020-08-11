@@ -2,12 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         >
 
         <TextView
@@ -22,6 +23,98 @@
             android:layout_marginTop="75dp"
             />
 
+        <?xml version="1.0" encoding="utf-8"?>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedback_frag_referred_tv"
+            android:background="@drawable/manager_card_bg"
+            android:layout_marginHorizontal="14dp"
+            android:id="@+id/feedback_frag_radio_group"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/feedback_frag_fb_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/primaryBlue"
+                android:textColor="@color/primaryBlue"
+                android:onClick="onRadioClicked"/>
+
+            <RadioButton android:id="@+id/feedback_frag_insta_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Instagram"
+                android:textColor="@color/primaryBlue"
+                android:buttonTint="@color/primaryBlue"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/feedback_frag_fitness_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fitness 2020"
+                android:textColor="@color/primaryBlue"
+                android:buttonTint="@color/primaryBlue"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/feedback_frag_friends_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Friends/Relatives"
+                android:textColor="@color/primaryBlue"
+                android:buttonTint="@color/primaryBlue"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/feedback_frag_others_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Others"
+                android:textColor="@color/primaryBlue"
+                android:buttonTint="@color/primaryBlue"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_bg"
+            android:layout_below="@id/feedback_frag_radio_group"
+            android:layout_marginTop="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/white"
+            android:text="BACK"
+            android:textSize="24sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingHorizontal="40dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/feedback_frag_referred_back_btn"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_bg"
+            android:layout_below="@id/feedback_frag_radio_group"
+            android:layout_marginTop="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:text="NEXT"
+            android:textSize="24sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginEnd="40dp"
+            android:paddingHorizontal="40dp"
+            android:id="@+id/feedback_frag_referred_next_btn"
+            />
 
 
     </RelativeLayout>

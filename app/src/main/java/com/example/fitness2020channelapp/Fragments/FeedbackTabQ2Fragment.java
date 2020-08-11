@@ -57,9 +57,9 @@ public class FeedbackTabQ2Fragment extends Fragment {
 
 
     private void attachID() {
-//        next = view.findViewById(R.id.);
-//        back = view.findViewById(R.id.);
-//        referRadioGroup = view.findViewById(R.id.);
+        next = view.findViewById(R.id.feedback_frag_referred_next_btn);
+        back = view.findViewById(R.id.feedback_frag_referred_back_btn);
+        referRadioGroup = view.findViewById(R.id.feedback_frag_radio_group);
 
     }
 
