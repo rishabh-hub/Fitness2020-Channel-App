@@ -30,7 +30,7 @@ public class FeedbackTabFragment extends Fragment {
     {
         getChildFragmentManager().popBackStack();
         FragmentTransaction fragmentTransaction=getChildFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.feedback_frameLayout,fragment);
+        fragmentTransaction.replace(R.id.feedback_frag_frame_lay,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
