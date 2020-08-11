@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.fitness2020channelapp.R;
+import com.google.android.material.snackbar.Snackbar;
 
 
 public class FeedbackTabQ4Fragment extends Fragment {
@@ -50,7 +51,8 @@ public class FeedbackTabQ4Fragment extends Fragment {
                 //save comment
                 //here
 
-                Toast.makeText(view.getContext(),"Form is Submitted successfully",Toast.LENGTH_LONG).show();
+//                Toast.makeText(view.getContext(),"Form is Submitted successfully",Toast.LENGTH_LONG).show();
+                Snackbar.make(view.getRootView(),"Form Submitted Successfully",Snackbar.LENGTH_SHORT).show();
 
                 //submit data
                 //here
