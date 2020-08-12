@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.AnalyticsDetailsActivity"></activity>
+        <activity android:name=".Activities.FeedbackDetailsActivity"></activity>
+        <activity android:name=".Activities.AnalyticsDetailsActivity" />
         <activity android:name=".Activities.OrderActivity" />
         <activity android:name=".Activities.OfferingScheduleActivity" />
         <activity android:name=".Activities.EventsActivity" />
@@ -24,15 +25,14 @@
         <activity android:name=".Activities.InfoActivity" />
         <activity android:name=".Activities.ManagerActivity" />
         <activity android:name=".Activities.PhotoVideoActivity" />
-        <activity android:name=".Activities.MainActivity"
-            android:windowSoftInputMode="adjustPan"
-            >
+        <activity
+            android:name=".Activities.MainActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
