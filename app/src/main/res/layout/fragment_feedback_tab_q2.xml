@@ -23,7 +23,6 @@
             android:layout_marginTop="75dp"
             />
 
-        <?xml version="1.0" encoding="utf-8"?>
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -42,7 +41,7 @@
                 android:layout_marginTop="5dp"
                 android:buttonTint="@color/primaryBlue"
                 android:textColor="@color/primaryBlue"
-                android:onClick="onRadioClicked"/>
+                />
 
             <RadioButton android:id="@+id/feedback_frag_insta_radio"
                 android:layout_width="wrap_content"
@@ -51,7 +50,7 @@
                 android:text="Instagram"
                 android:textColor="@color/primaryBlue"
                 android:buttonTint="@color/primaryBlue"
-                android:onClick="onRadioButtonClicked"/>
+                />
 
             <RadioButton android:id="@+id/feedback_frag_fitness_radio"
                 android:layout_width="wrap_content"
@@ -60,7 +59,7 @@
                 android:text="Fitness 2020"
                 android:textColor="@color/primaryBlue"
                 android:buttonTint="@color/primaryBlue"
-                android:onClick="onRadioButtonClicked"/>
+                />
 
             <RadioButton android:id="@+id/feedback_frag_friends_radio"
                 android:layout_width="wrap_content"
@@ -69,7 +68,7 @@
                 android:text="Friends/Relatives"
                 android:textColor="@color/primaryBlue"
                 android:buttonTint="@color/primaryBlue"
-                android:onClick="onRadioButtonClicked"/>
+                />
 
             <RadioButton android:id="@+id/feedback_frag_others_radio"
                 android:layout_width="wrap_content"
@@ -78,7 +77,7 @@
                 android:text="Others"
                 android:textColor="@color/primaryBlue"
                 android:buttonTint="@color/primaryBlue"
-                android:onClick="onRadioButtonClicked"/>
+                />
 
         </RadioGroup>
 

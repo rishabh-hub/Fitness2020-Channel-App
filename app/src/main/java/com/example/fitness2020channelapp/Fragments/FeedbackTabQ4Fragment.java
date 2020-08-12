@@ -49,8 +49,7 @@ public class FeedbackTabQ4Fragment extends Fragment {
                     comment = commentsET.getText().toString();
 
                 //save comment
-                //here
-
+                //her
 //                Toast.makeText(view.getContext(),"Form is Submitted successfully",Toast.LENGTH_LONG).show();
                 Snackbar.make(view.getRootView(),"Form Submitted Successfully",Snackbar.LENGTH_SHORT).show();
 
@@ -72,8 +71,8 @@ public class FeedbackTabQ4Fragment extends Fragment {
 
     public void loadFragment(Fragment fragment)
     {
-        getChildFragmentManager().popBackStack();
-        FragmentTransaction fragmentTransaction=getChildFragmentManager().beginTransaction();
+        getFragmentManager().popBackStack();
+        FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.feedback_frag_frame_lay,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();

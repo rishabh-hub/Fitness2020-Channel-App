@@ -63,8 +63,8 @@ public class FeedbackTabQ3Fragment extends Fragment {
 
     public void loadFragment(Fragment fragment)
     {
-        getChildFragmentManager().popBackStack();
-        FragmentTransaction fragmentTransaction=getChildFragmentManager().beginTransaction();
+        getFragmentManager().popBackStack();
+        FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.feedback_frag_frame_lay,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();

@@ -21,6 +21,7 @@ public class FeedbackTabQ2Fragment extends Fragment {
     Button next,back;
     RadioGroup referRadioGroup;
     RadioButton selectedBtn;
+    String source = new String();
 
 
     public FeedbackTabQ2Fragment() {
@@ -33,7 +34,13 @@ public class FeedbackTabQ2Fragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_feedback_tab_q2, container, false);
         attachID();
 
-
+        referRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                selectedBtn = view.findViewById(checkedId);
+                source = selectedBtn.getText().toString();
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,9 +52,9 @@ public class FeedbackTabQ2Fragment extends Fragment {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int selectedID = referRadioGroup.getCheckedRadioButtonId();
-                selectedBtn = view.findViewById(selectedID);
-                Toast.makeText(view.getContext(),selectedBtn.getText(),Toast.LENGTH_SHORT).show();
+
+
+                Toast.makeText(view.getContext(),source,Toast.LENGTH_SHORT).show();
 
                 loadFragment(new FeedbackTabQ3Fragment());
             }
@@ -65,10 +72,11 @@ public class FeedbackTabQ2Fragment extends Fragment {
 
     public void loadFragment(Fragment fragment)
     {
-        getChildFragmentManager().popBackStack();
-        FragmentTransaction fragmentTransaction=getChildFragmentManager().beginTransaction();
+        getFragmentManager().popBackStack();
+        FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.feedback_frag_frame_lay,fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
 }
