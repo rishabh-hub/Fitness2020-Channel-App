@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.CheckinTabFragment">
 
-    <TextView
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        style="@style/SpinnerTheme"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown"
+        android:dropDownVerticalOffset="50dp"
+        android:popupBackground="@drawable/manager_card_bg"
+        android:popupElevation="0dp"
+        android:id="@+id/feedback_data_frag_date_spinner"
+        />
 
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/feedback_data_frag_date_spinner"
+        android:id="@+id/feedback_data_rv"
+        />
+
+</RelativeLayout>

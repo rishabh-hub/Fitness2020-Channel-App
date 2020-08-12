@@ -31,7 +31,7 @@ public class FeedbackDataAdapter extends RecyclerView.Adapter<FeedbackDataAdapte
     @NonNull
     @Override
     public FeedbackDataAdapter.feedbackDataVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new feedbackDataVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.,parent,false));
+        return new feedbackDataVH(LayoutInflater.from(parent.getContext()).inflate(R.layout.feedback_data_frag_rv_item,parent,false));
     }
 
     @Override
@@ -49,9 +49,9 @@ public class FeedbackDataAdapter extends RecyclerView.Adapter<FeedbackDataAdapte
         RelativeLayout card;
         public feedbackDataVH(@NonNull View itemView) {
             super(itemView);
-//            name = itemView.findViewById(R.id.);
-//            rating = itemView.findViewById(R.id.);
-//            card = itemView.findViewById(R.id.);
+            name = itemView.findViewById(R.id.data_frag_rv_item_name_tv);
+            rating = itemView.findViewById(R.id.data_frag_rv_item_rating);
+            card = itemView.findViewById(R.id.data_frag_rv_item);
         }
 
         public void populateFeedbackData(FeedbackDataModel feedbackDataModel) {
