@@ -66,7 +66,7 @@ public class DataTabFragment extends Fragment {
     }
 
     private void addDummyData() {
-        for (int i=0;i<4;i++)
+        for (int i=0;i<12;i++)
             feedbackData.add(new FeedbackDataModel("Rishabh Singh",4));
     }
 
