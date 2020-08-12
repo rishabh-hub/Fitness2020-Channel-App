@@ -75,8 +75,8 @@ public class DataTabFragment extends Fragment {
     }
 
     private void attachID() {
-        dataRV = view.findViewById(R.id.feedback_data_frag_date_spinner);
-        feedBackSpinner = view.findViewById(R.id.feedback_data_rv);
+        dataRV = view.findViewById(R.id.feedback_data_rv);
+        feedBackSpinner = view.findViewById(R.id.feedback_data_frag_date_spinner);
     }
 
     private void initSpinner() {
