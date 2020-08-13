@@ -1,9 +1,420 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.FeedbackDetailsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/tlbr_rellay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primaryBlue">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_marginStart="40dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tlbr_rellay"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedback_details_header"
+                android:layout_marginTop="21dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feedback_details_header1"
+                    android:layout_marginStart="16dp"
+                    android:layout_toLeftOf="@id/feedback_details_header2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/fontGrey"
+                        android:text="Name:"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:id="@+id/feedback_deatils_name_tv"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ted Fox"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/fontGrey"
+                        android:id="@+id/feedback_details_name"
+                        android:layout_toRightOf="@id/feedback_deatils_name_tv"
+                        android:layout_alignStart="@id/feedback_details_email"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/fontGrey"
+                        android:text="Mobile:"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:id="@+id/feedback_deatils_mobile_tv"
+                        android:layout_below="@id/feedback_details_name"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91 xxxxxxxx"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/fontGrey"
+                        android:id="@+id/feedback_details_mobile"
+                        android:layout_toRightOf="@id/feedback_deatils_mobile_tv"
+                        android:layout_below="@+id/feedback_details_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/feedback_details_email"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/fontGrey"
+                        android:text="Email ID:"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:id="@+id/feedback_deatils_email_tv"
+                        android:layout_below="@id/feedback_details_mobile"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ted***@gmail.com"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/fontGrey"
+                        android:id="@+id/feedback_details_email"
+                        android:layout_toRightOf="@id/feedback_deatils_email_tv"
+                        android:layout_below="@+id/feedback_details_mobile"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/fontGrey"
+                        android:text="Age:"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:id="@+id/feedback_deatils_age_tv"
+                        android:layout_below="@id/feedback_details_email"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/fontGrey"
+                        android:id="@+id/feedback_details_age"
+                        android:layout_toRightOf="@id/feedback_deatils_age_tv"
+                        android:layout_below="@+id/feedback_details_email"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/feedback_details_email"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feedback_details_header2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_feedback_illustration"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback_details_header"
+                android:layout_marginTop="30dp"
+                android:id="@+id/feedback_details_rating_container"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating:"
+                    android:textColor="@color/fontGrey"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/feedback_details_rating_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feedback_details_rating_tv"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="55dp"
+                    android:text="Service:"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="15sp"
+                    android:textColor="@color/fontGrey"
+                    android:id="@+id/feedback_details_services_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/feedback_details_services_tv"
+                    android:layout_below="@id/feedback_details_rating_tv"
+                    android:layout_marginTop="24dp"
+                    android:text="3.0"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rating_background"
+                    android:backgroundTint="@color/primaryBlue"
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/feedback_details_services"
+                    android:layout_alignStart="@id/feedback_details_overall"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feedback_details_services_tv"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="55dp"
+                    android:text="Training:"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="15sp"
+                    android:textColor="@color/fontGrey"
+                    android:id="@+id/feedback_details_training_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/feedback_details_training_tv"
+                    android:layout_below="@id/feedback_details_services_tv"
+                    android:layout_marginTop="24dp"
+                    android:text="3.0"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rating_background"
+                    android:backgroundTint="@color/primaryBlue"
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/feedback_details_training"
+                    android:layout_alignStart="@id/feedback_details_overall"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feedback_details_training_tv"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="55dp"
+                    android:text="Amenities:"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="15sp"
+                    android:textColor="@color/fontGrey"
+                    android:id="@+id/feedback_details_amenities_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/feedback_details_amenities_tv"
+                    android:layout_below="@id/feedback_details_training_tv"
+                    android:layout_marginTop="24dp"
+                    android:text="3.0"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rating_background"
+                    android:backgroundTint="@color/primaryBlue"
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/feedback_details_amenities"
+                    android:layout_alignStart="@id/feedback_details_overall"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feedback_details_amenities_tv"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="55dp"
+                    android:text="Overall Rating:"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/fontGrey"
+                    android:id="@+id/feedback_details_overall_tv"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/feedback_details_overall_tv"
+                    android:layout_below="@id/feedback_details_amenities_tv"
+                    android:layout_marginTop="24dp"
+                    android:text="3.0"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rating_background"
+                    android:backgroundTint="@color/primaryBlue"
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/feedback_details_overall"
+                    android:layout_marginStart="103dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/fontGrey"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Complaints/ Suggestions:"
+                android:id="@+id/feedback_details_comp_tv"
+                android:layout_below="@id/feedback_details_rating_container"
+                android:layout_marginTop="45dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/fontGrey"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="14sp"
+                android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                android:id="@+id/feedback_details_comp"
+                android:layout_below="@+id/feedback_details_comp_tv"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/fontGrey"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15sp"
+                android:text="Complaints/ Suggestions:"
+                android:id="@+id/feedback_details_comments_tv"
+                android:layout_below="@id/feedback_details_comp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/fontGrey"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="14sp"
+                android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                android:id="@+id/feedback_details_comments"
+                android:layout_below="@+id/feedback_details_comments_tv"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedback_details_comments"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="15dp"
+                android:textColor="@color/fontGrey"
+                android:text="Referred to by:"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/feedback_details_referred_tv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/feedback_details_comments"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="Fitness 2020"
+                android:textColor="@color/fontGrey"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/feedback_details_referred_tv"
+                android:id="@+id/feedback_details_referred"
+                android:layout_marginStart="9dp"
+                />
+
+        </RelativeLayout>
+        
+    </ScrollView>
+
+
+</RelativeLayout>

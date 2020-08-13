@@ -30,16 +30,17 @@ public class FeedbackDetailsActivity extends AppCompatActivity {
     }
 
     private void attachID() {
-//        nameTV = findViewById(R.id.);
-//        mobileTV = findViewById(R.id.);
-//        emailTV = findViewById(R.id.);
-//        ageTV = findViewById(R.id.);
-//        serviceRatingTV = findViewById(R.id.);
-//        trainingRatingTV = findViewById(R.id.);
-//        amenitiesRatingTV = findViewById(R.id.);
-//        overallRatingTV = findViewById(R.id.);
-//        complaintsTV = findViewById(R.id.);
-//        commentsTV = findViewById(R.id.);
-//        sourceTV = findViewById(R.id.);
+        nameTV = findViewById(R.id.feedback_details_name);
+        mobileTV = findViewById(R.id.feedback_details_mobile);
+        emailTV = findViewById(R.id.feedback_details_email);
+        ageTV = findViewById(R.id.feedback_details_age);
+        serviceRatingTV = findViewById(R.id.feedback_details_services);
+        trainingRatingTV = findViewById(R.id.feedback_details_training);
+        amenitiesRatingTV = findViewById(R.id.feedback_details_amenities);
+        overallRatingTV = findViewById(R.id.feedback_details_overall);
+        complaintsTV = findViewById(R.id.feedback_details_comp);
+        commentsTV = findViewById(R.id.feedback_details_comments);
+        sourceTV = findViewById(R.id.feedback_details_referred);
+        backBtn=findViewById(R.id.back_btn);
     }
 }
