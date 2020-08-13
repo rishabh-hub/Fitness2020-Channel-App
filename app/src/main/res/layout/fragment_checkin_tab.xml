@@ -221,7 +221,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="19sp"
         android:fontFamily="@font/ubuntu_bold"
         android:text="Submit"
         android:background="@drawable/button_bg"
