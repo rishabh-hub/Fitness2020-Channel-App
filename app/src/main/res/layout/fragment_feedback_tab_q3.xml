@@ -5,7 +5,15 @@
     android:background="@color/white"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,8 +34,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="14dp"
         android:fontFamily="@font/ubuntu_regular"
-        android:text="Complaints and suggestions helps us to make your experiecnce with us better."
         android:textSize="15sp"
+        android:hint="Complaints and suggestions helps us to make your experiecnce with us better."
         android:textAlignment="textStart"
         android:gravity="start"
         android:padding="5dp"
@@ -70,5 +78,8 @@
         />
 
 
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
