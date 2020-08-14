@@ -21,6 +21,8 @@ public class FeedbackDetailsActivity extends AppCompatActivity {
 
         attachID();
 
+        emailTV.setText("rishabhsinghluknonawab@gmail.com");
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
