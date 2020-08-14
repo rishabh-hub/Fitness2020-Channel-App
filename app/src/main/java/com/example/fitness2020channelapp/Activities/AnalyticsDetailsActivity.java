@@ -39,24 +39,32 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
     private void setPieChart() {
 //        this.pieChart = pieChart;
         pieChart.setUsePercentValues(true);
-        pieChart.getDescription().setEnabled(true);
-        pieChart.setExtraOffsets(5,10,5,5);
+        pieChart.getDescription().setEnabled(false);
+//        pieChart.setExtraOffsets(15,10,15,15);
         pieChart.setDragDecelerationFrictionCoef(0.9f);
-        pieChart.setTransparentCircleRadius(61f);
+//        pieChart.setTransparentCircleRadius(61f);
         pieChart.setHoleColor(Color.WHITE);
         ArrayList<PieEntry> yValues = new ArrayList<>();
         yValues.add(new PieEntry(34f,"vouchers"));
+        yValues.add(new PieEntry(45f,"events"));
         yValues.add(new PieEntry(56f,"webinars"));
         yValues.add(new PieEntry(66f,"bookings"));
-        yValues.add(new PieEntry(45f,"events"));
+        yValues.add(new PieEntry(45f,"B2B orders"));
 
-        PieDataSet dataSet = new PieDataSet(yValues, "Disease Per Regions");
+        int[] colors = {
+                Color.rgb(140, 140, 140) ,Color.rgb(203, 231, 255), Color.rgb(110, 187, 253), Color.rgb(0, 114, 209),
+                Color.rgb(0, 52, 100)
+        };
+
+
+        PieDataSet dataSet = new PieDataSet(yValues,"");
                 dataSet.setSliceSpace(3f);
         dataSet.setSelectionShift(5f);
-        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        dataSet.setColors(colors);
         PieData pieData = new PieData((dataSet));
         pieData.setValueTextSize(10f);
-        pieData.setValueTextColor(Color.YELLOW);
+        pieData.setValueTextColor(Color.WHITE);
+
         pieChart.setData(pieData);
     }
 
