@@ -42,6 +42,8 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
         pieChart.getDescription().setEnabled(false);
 //        pieChart.setExtraOffsets(15,10,15,15);
         pieChart.setDragDecelerationFrictionCoef(0.9f);
+        pieChart.setCenterText("Rs 78650\nby 113,456 visits");
+        pieChart.setEntryLabelTextSize(10f);
 //        pieChart.setTransparentCircleRadius(61f);
         pieChart.setHoleColor(Color.WHITE);
         ArrayList<PieEntry> yValues = new ArrayList<>();
@@ -52,14 +54,14 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
         yValues.add(new PieEntry(45f,"B2B orders"));
 
         int[] colors = {
-                Color.rgb(140, 140, 140) ,Color.rgb(203, 231, 255), Color.rgb(110, 187, 253), Color.rgb(0, 114, 209),
+                Color.rgb(140, 140, 140) ,Color.rgb(79, 125, 167), Color.rgb(110, 187, 253), Color.rgb(0, 114, 209),
                 Color.rgb(0, 52, 100)
         };
 
 
         PieDataSet dataSet = new PieDataSet(yValues,"");
                 dataSet.setSliceSpace(3f);
-        dataSet.setSelectionShift(5f);
+        dataSet.setSelectionShift(2f);
         dataSet.setColors(colors);
         PieData pieData = new PieData((dataSet));
         pieData.setValueTextSize(10f);
