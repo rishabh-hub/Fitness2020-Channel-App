@@ -449,10 +449,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/manager_card_bg"
+                android:text="71% of the existing users visited this month."
                 android:paddingHorizontal="22dp"
                 android:paddingVertical="11dp"
                 android:layout_below="@+id/analytics_details_existing_users"
                 android:layout_marginTop="13dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:textColor="@color/fontGrey"
                 android:id="@+id/analytics_details_existing_percentage"
                 />
 
@@ -490,10 +494,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/manager_card_bg"
+                android:text="7% increase in intake of new users from last month."
                 android:paddingHorizontal="22dp"
                 android:paddingVertical="11dp"
                 android:layout_below="@+id/analytics_details_new_users"
                 android:layout_marginTop="13dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:textColor="@color/fontGrey"
                 android:id="@+id/analytics_details_new_percentage"
                 />
 
@@ -527,7 +535,6 @@
                 android:layout_height="250dp"
                 android:layout_below="@id/analytics_details_booking_freq_tv"
                 android:layout_marginTop="10dp"
-
                 />
 
             <LinearLayout
