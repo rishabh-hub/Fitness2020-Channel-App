@@ -18,6 +18,9 @@ import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -50,12 +53,13 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
         attachID();
 //        setSpinner();
         setPieChart();
-        setLoyaltyPie();
-        setServicePie();
-        setTrainingPie();
-        setAmenitiesPie();
-        setSourceDivisionPie();
+//        setLoyaltyPie();
+//        setServicePie();
+//        setTrainingPie();
+//        setAmenitiesPie();
+//        setSourceDivisionPie();
         setBookingLineChart();
+//        setAgeFrequencyBArChart();
 
 //        backBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -63,6 +67,30 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
+    }
+
+    private void setAgeFrequencyBArChart() {
+        ArrayList<BarEntry> ages = new ArrayList<>();
+        ages.add(new BarEntry(0,20));
+        ages.add(new BarEntry(0,100));
+        ages.add(new BarEntry(0,400));
+        ages.add(new BarEntry(0,800));
+        ages.add(new BarEntry(0,200));
+
+        ArrayList<String> ageGroups = new ArrayList<>();
+        ageGroups.add("0-13");
+        ageGroups.add("13-19");
+        ageGroups.add("19-30");
+        ageGroups.add("30-50");
+        ageGroups.add("50+");
+
+        BarDataSet barDataSet = new BarDataSet(ages,"");
+        BarData barData = new BarData(barDataSet);
+        ageFrequencyBarChart.setData(barData);
+
+
+
 
     }
 
@@ -97,8 +125,8 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
         lineDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
         lineDataSet.setHighlightEnabled(true);
         lineDataSet.setLineWidth(2);
-        lineDataSet.setColor(Color.BLUE);
-        lineDataSet.setCircleColor(Color.YELLOW);
+        lineDataSet.setColor(Color.rgb(10,76,137));
+        lineDataSet.setCircleColor(Color.rgb(110,187,253));
         lineDataSet.setCircleRadius(6);
         lineDataSet.setCircleHoleRadius(3);
         lineDataSet.setDrawHighlightIndicators(true);
