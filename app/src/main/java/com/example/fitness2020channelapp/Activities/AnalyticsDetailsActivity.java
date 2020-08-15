@@ -386,7 +386,7 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
 //        backBtn = findViewById(R.id.);
         pieChart = findViewById(R.id.analytics_details_piechart_1);
 //        sourceDivisionPie =findViewById(R.id.);
-//        loyaltyPie = findViewById(R.id.);
+        loyaltyPie = findViewById(R.id.analytics_details_piechart_2);
 //        servicePie = findViewById(R.id.);
 //        trainingPie = findViewById(R.id.);
 //        amenitiesPie = findViewById(R.id.);
