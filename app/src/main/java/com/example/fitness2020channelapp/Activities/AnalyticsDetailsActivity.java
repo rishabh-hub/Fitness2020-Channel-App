@@ -375,6 +375,6 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
 //        bookingsRevenue = findViewById(R.id.);
 //        monthSlotSpinner = findViewById(R.id.);
 //        monthSlotSpinner = findViewById(R.id.);
-
+          bookingFrequencyLneChart=findViewById(R.id.analytics_details_booking_freq_chart);
     }
 }
