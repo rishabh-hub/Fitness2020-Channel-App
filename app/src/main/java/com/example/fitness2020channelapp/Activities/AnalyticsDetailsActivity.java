@@ -53,13 +53,13 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
         attachID();
 //        setSpinner();
         setPieChart();
-//        setLoyaltyPie();
-//        setServicePie();
-//        setTrainingPie();
-//        setAmenitiesPie();
-//        setSourceDivisionPie();
+        setLoyaltyPie();
+        setServicePie();
+        setTrainingPie();
+        setAmenitiesPie();
+        setSourceDivisionPie();
         setBookingLineChart();
-//        setAgeFrequencyBArChart();
+        setAgeFrequencyBArChart();
 
 //        backBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -385,11 +385,12 @@ public class AnalyticsDetailsActivity extends AppCompatActivity {
     private void attachID() {
 //        backBtn = findViewById(R.id.);
         pieChart = findViewById(R.id.analytics_details_piechart_1);
-//        sourceDivisionPie =findViewById(R.id.);
+        sourceDivisionPie =findViewById(R.id.analytics_details_piechart_7);
         loyaltyPie = findViewById(R.id.analytics_details_piechart_2);
-//        servicePie = findViewById(R.id.);
-//        trainingPie = findViewById(R.id.);
-//        amenitiesPie = findViewById(R.id.);
+        servicePie = findViewById(R.id.analytics_details_piechart_3);
+        trainingPie = findViewById(R.id.analytics_details_piechart_4);
+        amenitiesPie = findViewById(R.id.analytics_details_piechart_5);
+        ageFrequencyBarChart = findViewById(R.id.analytics_details_bar_chart6);
 //        totalUsers = findViewById(R.id.);
 //        estimatedRevenue = findViewById(R.id.);
 //        visits = findViewById(R.id.);

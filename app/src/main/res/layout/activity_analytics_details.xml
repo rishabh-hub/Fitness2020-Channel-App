@@ -677,7 +677,50 @@
                 android:textSize="17sp"
                 android:layout_below="@+id/analytics_details_line_separator4"
                 android:layout_marginTop="20dp"
+                android:id="@+id/analytics_details_age_freq_tv"
                 />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/analytics_details_bar_chart6"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_below="@+id/analytics_details_age_freq_tv"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primaryBlue"
+                android:layout_marginHorizontal="50dp"
+                android:layout_below="@id/analytics_details_bar_chart6"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/analytics_details_line_separator5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:text="Source Division"
+                android:fontFamily="@font/hind_bold"
+                android:textColor="@color/fontGrey"
+                android:textSize="17sp"
+                android:layout_below="@+id/analytics_details_line_separator5"
+                android:layout_marginTop="20dp"
+                android:id="@+id/analytics_details_source_div_tv"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/analytics_details_piechart_7"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@id/analytics_details_source_div_tv"
+                android:layout_marginTop="5dp"
+                >
+            </com.github.mikephil.charting.charts.PieChart>
 
         </RelativeLayout>
     </ScrollView>
