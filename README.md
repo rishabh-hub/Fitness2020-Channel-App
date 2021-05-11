@@ -1,6 +1,6 @@
 # Fitness2020-Channel-App
 
-Fitness2020 is the admin panel side of the Fitness 2020 app.
+Fitness2020 is the admin panel side of the [Fitness 2020](https://github.com/rishabh-hub/Fitness2020) app.
 
 # Purpose
 * This app enables gym owners/admin side to manage the data across the user app easily and efficienetly.
